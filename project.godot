@@ -59,6 +59,11 @@ shoot={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="all"
+3d_physics/layer_2="damageble"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

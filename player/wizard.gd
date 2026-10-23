@@ -23,6 +23,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var aimcast=$RayCast3D
 @onready var camera=$Camera3D
 
+
+@onready var fireball=preload("res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/fireball.tscn")
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -95,7 +98,18 @@ func fire():
 	
 		
 	if Input.is_action_just_released("shoot"):
+		var firball_inst=fireball.instantiate()
+		get_tree().get_root().call_deferred("add_child",firball_inst)
+		
+		firball_inst.rotation=$Camera3D.rotation
+		firball_inst.global_transform=$Camera3D.global_transform
+		var dir=-$Camera3D.global_transform.basis.z
+		firball_inst.apply_central_impulse(10.0*dir)
+		
 		secondary_fire=false
 		altfirecooldown_timer=0
 		
 	
+
+func ouch(dam):
+	print("die")
