@@ -2,6 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://bxjr6mv7buvk" path="res://Assets/Tiles/Gridmapcollision.meshlib" id="1_46wvr"]
 [ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="2_cpfj1"]
+[ext_resource type="PackedScene" uid="uid://c3qk8yf1dw35u" path="res://Enemies/Enemy test.tscn" id="3_cpfj1"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_46wvr"]
 size = Vector3(95.288574, 1, 90.675964)
@@ -32,3 +33,27 @@ mesh = SubResource("BoxMesh_46wvr")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=327879374]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6053772, 0.5, 2.5474854)
 shape = SubResource("BoxShape3D_cpfj1")
+
+[node name="EnemyTest" parent="." unique_id=1885884954 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.756426, 1.8481445, -41.52832)
+
+[node name="EnemyTest2" parent="." unique_id=554312743 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.866621, 0.9225464, 30.531494)
+
+[node name="EnemyTest3" parent="." unique_id=46534797 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.199226, 2.394165, -14.173596)
+
+[node name="EnemyTest4" parent="." unique_id=257511902 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.440506, 1.199585, 30.687778)
+
+[node name="EnemyTest5" parent="." unique_id=466136095 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.460083, 2.39917, 34.555)
+
+[node name="EnemyTest6" parent="." unique_id=876449246 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.440506, 1.199585, 25.509068)
+
+[node name="EnemyTest7" parent="." unique_id=1859868051 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.518288, 1.199585, 38.945316)
+
+[node name="EnemyTest8" parent="." unique_id=960753059 instance=ExtResource("3_cpfj1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.630173, 1.199585, 33.498234)
