@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tcs7y8lkdbod"
-path.s3tc="res://.godot/imported/building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg-44c686fd1782533be49d772f6ecad6d4.s3tc.ctex"
+uid="uid://t4ys6a4era5v"
+path.s3tc="res://.godot/imported/building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg-2a3a14f240e656124a6d5047c3fe7a66.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg"
-dest_files=["res://.godot/imported/building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg-44c686fd1782533be49d772f6ecad6d4.s3tc.ctex"]
+source_file="res://Assets/Tiles/building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg"
+dest_files=["res://.godot/imported/building2_shihab-chowdhury-C-xOKAJjrbg-unsplash.jpg-2a3a14f240e656124a6d5047c3fe7a66.s3tc.ctex"]
 
 [params]
 
