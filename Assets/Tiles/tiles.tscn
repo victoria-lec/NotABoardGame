@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://7qxu0vkvmckw"]
 
-[ext_resource type="PackedScene" uid="uid://dit6ati4flce" path="res://Assets/Tiles/building2.glb" id="1_yrajf"]
+[ext_resource type="PackedScene" uid="uid://php0qhhdgvfa" path="res://building2.glb" id="1_yrajf"]
 
 [node name="tiles" type="Node3D" unique_id=1180920459]
 
-[node name="building2" parent="." unique_id=1034023928 instance=ExtResource("1_yrajf")]
+[node name="building2" parent="." unique_id=1558043762 instance=ExtResource("1_yrajf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
