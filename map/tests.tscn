@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://pe05jqwurlsk"]
+
+[ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="1_r3ype"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_12gb0"]
+size = Vector3(23, 1, 23)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_12gb0"]
+size = Vector3(23, 1, 23)
+
+[node name="tests" type="Node3D" unique_id=394445074]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1180207636]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1475961269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = SubResource("BoxMesh_12gb0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=725289093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+shape = SubResource("BoxShape3D_12gb0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=500679154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.0299644, 0)
+omni_range = 15.883571
+
+[node name="wizard" parent="." unique_id=608797488 instance=ExtResource("1_r3ype")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30633926, 9.735073, -2.4068813)
