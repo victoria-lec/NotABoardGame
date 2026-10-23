@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo3jomu4lru0c"]
+
+[ext_resource type="Shader" uid="uid://bwsqiujn14ovu" path="res://burn.gdshader" id="1_x8fbi"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_41u45"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ktgx5"]
+render_priority = 0
+shader = ExtResource("1_x8fbi")
+shader_parameter/albedo = Color(0.8, 0.8, 0.85, 1)
+shader_parameter/roughness = 0.94800004503
+shader_parameter/metallic = 0.0
+shader_parameter/dissolve = 1.0
+shader_parameter/edge_width = 0.06
+shader_parameter/edge_color = Color(1, 0.45, 0.1, 1)
+shader_parameter/edge_energy = 6.0
+shader_parameter/noise_scale = 2.5
+shader_parameter/use_world_space = false
+
+[node name="ball" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_41u45")
+surface_material_override/0 = SubResource("ShaderMaterial_ktgx5")
