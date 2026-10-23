@@ -18,6 +18,19 @@ config/name="NotABoardGame"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*uid://do5rajbwmjp3y"
+
+[global_group]
+
+land=""
+player=""
+player_weapon=""
+bullet=""
+enemy=""
+interactible=""
+
 [input]
 
 move_right={
