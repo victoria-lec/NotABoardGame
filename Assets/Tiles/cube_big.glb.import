@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dit6ati4flce"
-path="res://.godot/imported/building2.glb-d9339f871f69a80a407472ae6f8978b8.scn"
+uid="uid://2vb5pmtmowgs"
+path="res://.godot/imported/cube_big.glb-2ab6d6bde22d14526e80402f0dcab3f4.scn"
 
 [deps]
 
-source_file="res://Assets/Tiles/building2.glb"
-dest_files=["res://.godot/imported/building2.glb-d9339f871f69a80a407472ae6f8978b8.scn"]
+source_file="res://Assets/Tiles/cube_big.glb"
+dest_files=["res://.godot/imported/cube_big.glb-2ab6d6bde22d14526e80402f0dcab3f4.scn"]
 
 [params]
 
@@ -42,4 +42,4 @@ materials/extract_path=""
 _subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
-gltf/texture_map_mode=0
+gltf/texture_map_mode=1
