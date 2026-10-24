@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://mhhofyeeyh5w"]
+
+[ext_resource type="Script" uid="uid://dktslqvssn7vd" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/explosion_maker.gd" id="1_fxfyw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fxfyw"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_kn2a2"]
+sky_material = SubResource("ProceduralSkyMaterial_fxfyw")
+
+[sub_resource type="Environment" id="Environment_16b1a"]
+background_mode = 2
+sky = SubResource("Sky_kn2a2")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_12gb0"]
+radius = 0.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_12gb0"]
+
+[node name="exploision_trail_generator" type="Node3D" unique_id=1693415431]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=178299983]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1637988843]
+environment = SubResource("Environment_16b1a")
+
+[node name="explosion_maker" type="Area3D" parent="." unique_id=1434630810]
+script = ExtResource("1_fxfyw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker" unique_id=48269798]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="explosion_maker" unique_id=496751150]
+mesh = SubResource("BoxMesh_12gb0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1479707544]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5, 0)
+
+[connection signal="body_entered" from="explosion_maker" to="explosion_maker" method="_on_body_entered"]
