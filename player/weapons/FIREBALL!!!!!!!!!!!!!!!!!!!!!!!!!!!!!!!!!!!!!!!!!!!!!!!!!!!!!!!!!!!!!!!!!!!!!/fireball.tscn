@@ -2,20 +2,33 @@
 
 [ext_resource type="Script" uid="uid://dg6obcuijm1kj" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/fireball.gd" id="1_urka4"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_ux24b"]
-radius = 0.1897879
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3ype"]
+emission_enabled = true
+emission = Color(1, 0.45882353, 0, 1)
+emission_energy_multiplier = 12.05
 
 [sub_resource type="SphereMesh" id="SphereMesh_12gb0"]
+material = SubResource("StandardMaterial3D_r3ype")
 radius = 0.2
 height = 0.4
 
-[node name="fireball" type="RigidBody3D" unique_id=1428884094 groups=["player_weapon"]]
-script = ExtResource("1_urka4")
+[sub_resource type="SphereShape3D" id="SphereShape3D_7ocpx"]
+radius = 0.2
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1478228799]
-shape = SubResource("SphereShape3D_ux24b")
+[node name="fireball" type="RigidBody3D" unique_id=1428884094 groups=["player_weapon"]]
+gravity_scale = 0.3
+script = ExtResource("1_urka4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=287950686]
 mesh = SubResource("SphereMesh_12gb0")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="Area3D" type="Area3D" parent="." unique_id=2023619249]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=231550157]
+shape = SubResource("SphereShape3D_7ocpx")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2024781171]
+light_color = Color(1, 0, 0, 1)
+light_energy = 4.78
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
