@@ -27,7 +27,8 @@ func _physics_process(delta: float) -> void:
 	var dir=local_dest.normalized()
 	
 	velocity=dir*3
-	move_and_slide()
+	if state == 1:
+		move_and_slide()
 	
 func _on_timer_timeout() -> void:
 	if state==0:
