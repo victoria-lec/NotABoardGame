@@ -12,6 +12,9 @@ billboard_mode = 2
 [sub_resource type="QuadMesh" id="QuadMesh_0oy0n"]
 material = SubResource("StandardMaterial3D_k7sfc")
 
+[sub_resource type="BoxMesh" id="BoxMesh_12gb0"]
+size = Vector3(0.02, 0.02, 1)
+
 [node name="EnemyTest" type="CharacterBody3D" unique_id=851749460 groups=["enemy"]]
 collision_layer = 3
 script = ExtResource("1_nabwb")
@@ -27,7 +30,19 @@ mesh = SubResource("QuadMesh_0oy0n")
 debug_enabled = true
 
 [node name="Timer" type="Timer" parent="." unique_id=580667065]
-wait_time = 0.5
+wait_time = 0.2
 autostart = true
 
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=2036703469]
+collision_mask = 3
+
+[node name="rattler_timer" type="Timer" parent="." unique_id=1187818608]
+wait_time = 3.0
+one_shot = true
+
+[node name="bullet" type="MeshInstance3D" parent="." unique_id=200472044]
+visible = false
+mesh = SubResource("BoxMesh_12gb0")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="rattler_timer" to="." method="_on_rattler_timer_timeout"]
