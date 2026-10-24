@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://php0qhhdgvfa"
+uid="uid://dv8ofkk6jje4f"
 path="res://.godot/imported/building2.glb-049162ac760e167684eb4e202f2f09dc.scn"
 
 [deps]
@@ -42,8 +42,4 @@ materials/extract_path=""
 _subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
-<<<<<<< Updated upstream
-gltf/texture_map_mode=1
-=======
 gltf/texture_map_mode=0
->>>>>>> Stashed changes
