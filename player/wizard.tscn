@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_12gb0"]
 
-[node name="wizard" type="CharacterBody3D" unique_id=608797488]
+[node name="wizard" type="CharacterBody3D" unique_id=608797488 groups=["player"]]
 collision_layer = 3
 script = ExtResource("1_3dheo")
 
