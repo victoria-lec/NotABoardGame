@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bfy8rd542uwj1" path="res://player/wizard.gd" id="1_3dheo"]
 [ext_resource type="Script" uid="uid://cuabm1212tkc1" path="res://player/label.gd" id="2_la7br"]
+[ext_resource type="PackedScene" uid="uid://dphcpicw05mul" path="res://Globals/hopper.tscn" id="3_31ajc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
 
@@ -30,3 +31,5 @@ target_position = Vector3(0, 0, -999999)
 offset_right = 797.0
 offset_bottom = 80.0
 script = ExtResource("2_la7br")
+
+[node name="hopper" parent="." unique_id=2028513549 instance=ExtResource("3_31ajc")]

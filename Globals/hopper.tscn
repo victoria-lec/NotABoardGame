@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://dphcpicw05mul"]
 
+[ext_resource type="Script" uid="uid://e1eeamdaimgk" path="res://Globals/hopper.gd" id="1_6lahf"]
+
 [node name="hopper" type="Node3D" unique_id=2028513549]
+script = ExtResource("1_6lahf")
 
-[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1242615363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+[node name="bottom" type="RayCast3D" parent="." unique_id=1242615363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, 0)
 target_position = Vector3(-0.1, 0, 0)
 
-[node name="RayCast3D2" type="RayCast3D" parent="." unique_id=225248706]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
-target_position = Vector3(-0.1, 0, 0)
+[node name="top" type="RayCast3D" parent="." unique_id=225248706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+target_position = Vector3(-0.2, 0, 0)
