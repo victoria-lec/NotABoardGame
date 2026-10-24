@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chfvsrk32sibd"
-path="res://.godot/imported/dan-gold-N7RiDzfF2iw-unsplash.jpg-3cfc3f133d74b36bf4557b8f658b5fc9.ctex"
+uid="uid://bvri4vstl8l1s"
+path.s3tc="res://.godot/imported/0018.png-85534fa7e905ddb75e14cedfb83e8d42.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/dan-gold-N7RiDzfF2iw-unsplash.jpg"
-dest_files=["res://.godot/imported/dan-gold-N7RiDzfF2iw-unsplash.jpg-3cfc3f133d74b36bf4557b8f658b5fc9.ctex"]
+source_file="res://Assets/boom/0018.png"
+dest_files=["res://.godot/imported/0018.png-85534fa7e905ddb75e14cedfb83e8d42.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -23,7 +24,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -37,4 +38,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
