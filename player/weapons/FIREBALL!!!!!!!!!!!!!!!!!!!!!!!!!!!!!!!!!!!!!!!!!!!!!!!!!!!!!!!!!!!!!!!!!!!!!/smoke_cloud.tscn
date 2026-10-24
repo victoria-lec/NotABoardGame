@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bn3smiinxihlm"]
+
+[ext_resource type="Texture2D" uid="uid://cqh3symvyo08l" path="res://icon.svg" id="1_bv0ok"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bv0ok")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="smoke_cloud" type="Node3D" unique_id=879127273]
+
+[node name="MeshInstance3D" type="AnimatedSprite3D" parent="." unique_id=1359029655]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_12gb0")
