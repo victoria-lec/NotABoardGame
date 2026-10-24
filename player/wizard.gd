@@ -67,7 +67,33 @@ func _physics_process(delta):
 	#move player
 	move_and_slide()
 	
+
+func _input(event):
+	if event is InputEventMouseMotion:
+		mousedelta =event.relative
 	
+	if event is InputEventMouseMotion:
+		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+			mousedelta += event.relative 
+
+	# Esc releases the mouse (useful for debugging / pause menus)
+	if event.is_action_pressed("ui_cancel"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+	# Click to recapture
+	if event is InputEventMouseButton and event.pressed:
+		if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			get_viewport().set_input_as_handled()
+
+func _notification(what):
+	
+	if what == NOTIFICATION_APPLICATION_FOCUS_IN:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	elif what == NOTIFICATION_APPLICATION_FOCUS_OUT:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+
 func _process(delta):
 	#rotate camera x
 	camera.rotation_degrees.x -= mousedelta.y * Sensetivity * delta
@@ -82,9 +108,6 @@ func _process(delta):
 	#reset
 	mousedelta=Vector2()
 
-func _input(event):
-	if event is InputEventMouseMotion:
-		mousedelta =event.relative
 		
 
 
@@ -106,7 +129,7 @@ func fire():
 		firball_inst.rotation=$Camera3D.rotation
 		firball_inst.global_transform=$Camera3D.global_transform
 		var dir=-$Camera3D.global_transform.basis.z
-		firball_inst.apply_central_impulse(10.0*dir)
+		firball_inst.apply_central_impulse(6.0*dir)
 		
 		secondary_fire=false
 		altfirecooldown_timer=0
