@@ -53,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://chjgj1cktqn7l" path="res://Assets/boom/0050.png" id="51_4l3io"]
 [ext_resource type="Texture2D" uid="uid://cjm73sekjixwy" path="res://Assets/boom/0051.png" id="52_m5nip"]
 [ext_resource type="Texture2D" uid="uid://di30t4vkhbh55" path="res://Assets/boom/0052.png" id="53_vb1qc"]
+[ext_resource type="AudioStream" uid="uid://b74mtaskgq6aj" path="res://audio/259300__unfa__huge-explosion.wav" id="54_7wj4e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
 animations = [{
@@ -224,3 +225,9 @@ script = ExtResource("1_s262u")
 [node name="MeshInstance3D" type="AnimatedSprite3D" parent="." unique_id=1359029655]
 billboard = 2
 sprite_frames = SubResource("SpriteFrames_12gb0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer3D" parent="." unique_id=524713639]
+stream = ExtResource("54_7wj4e")
+volume_db = -10.0
+max_db = 0.0
+autoplay = true
