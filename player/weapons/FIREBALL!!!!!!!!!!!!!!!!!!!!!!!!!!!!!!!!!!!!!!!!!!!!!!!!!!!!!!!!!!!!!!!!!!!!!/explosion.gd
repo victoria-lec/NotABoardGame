@@ -16,15 +16,46 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node3D) -> void:
 	
 	if body.has_method("ouch"):
+		if body.is_in_group("player"):#extra grace
+			#set ofsets
+			var target_pos=to_local(body.global_position)
+			var offsets=[]
+			
+			offsets.append(target_pos)
+			var side := target_pos.cross(Vector3.UP).normalized()
+			offsets.append(target_pos-side*0.4)
+			offsets.append(target_pos+side*0.4)
+			var exposed=false
+			var falloff=0
+			for off in offsets:
+				
+				var ray=RayCast3D.new()
+				add_child(ray)
+				ray.position+=Vector3(0,0.5,0)
+				ray.target_position=off
+				ray.force_raycast_update()
+				var dist := global_position.distance_to(body.global_position)
+				falloff = 1.0 - clampf(dist / $CollisionShape3D.shape.radius, 0.0, 1.0)
+				if ray.get_collider() and ray.get_collider()==body:
+					pass
+				else :
+					exposed=false
+					break
+			if exposed:
+				body.ouch(damage*falloff)
+				
 		
-		$RayCast3D.target_position=body.global_position-global_position
-		$RayCast3D.force_raycast_update()
+		var ray=RayCast3D.new()
+		add_child(ray)
+		ray.position+=Vector3(0,0.5,0)
+		ray.target_position=to_local(body.global_position)
+		ray.force_raycast_update()
 		var dist := global_position.distance_to(body.global_position)
 		var falloff := 1.0 - clampf(dist / $CollisionShape3D.shape.radius, 0.0, 1.0)
-		if $RayCast3D.get_collider() and $RayCast3D.get_collider()==body:
+		if ray.get_collider() and ray.get_collider()==body:
 			body.ouch(damage*falloff)
 			
-			
+		
 
 
 
