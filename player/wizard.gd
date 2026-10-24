@@ -30,7 +30,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
-	
+	Globals.player_pos=global_position
 	if speed<base_speed:
 		speed=base_speed
 	if speed>=max_speed:

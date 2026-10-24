@@ -16,6 +16,7 @@ height = 0.4
 radius = 0.2
 
 [node name="fireball" type="RigidBody3D" unique_id=1428884094 groups=["player_weapon"]]
+gravity_scale = 0.3
 script = ExtResource("1_urka4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=287950686]
