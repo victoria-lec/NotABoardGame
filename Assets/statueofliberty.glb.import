@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://5fd2i0reo6tp"
-path="res://.godot/imported/cargovrrrrm.glb-ddbedba1bf5d0a8cf88101f5801fc27f.scn"
+uid="uid://d1j7y13f4i83r"
+path="res://.godot/imported/statueofliberty.glb-2f2298c12fadd5c2b8948223cceee48c.scn"
 
 [deps]
 
-source_file="res://Assets/cargovrrrrm.glb"
-dest_files=["res://.godot/imported/cargovrrrrm.glb-ddbedba1bf5d0a8cf88101f5801fc27f.scn"]
+source_file="res://Assets/statueofliberty.glb"
+dest_files=["res://.godot/imported/statueofliberty.glb-2f2298c12fadd5c2b8948223cceee48c.scn"]
 
 [params]
 

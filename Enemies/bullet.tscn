@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c6kpofht4om6r"]
+
+[ext_resource type="Script" uid="uid://dt5e5tw3dubhj" path="res://character_body_3d.gd" id="2_s6aeo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ciovp"]
+size = Vector3(1, 0.02, 0.02)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1qp3r"]
+radius = 0.02
+height = 1.0
+
+[node name="Bullet" type="Node3D" unique_id=1946229560]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=812434559]
+script = ExtResource("2_s6aeo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1423347428]
+shape = SubResource("BoxShape3D_ciovp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1646931500]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_1qp3r")

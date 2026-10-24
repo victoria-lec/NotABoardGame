@@ -8,16 +8,18 @@ radius = 0.2
 [node name="exploision_trail_generator" type="Node3D" unique_id=1693415431]
 
 [node name="explosion_maker" type="Area3D" parent="." unique_id=1434630810]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker" unique_id=48269798]
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker" unique_id=1342128279]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker2" type="Area3D" parent="." unique_id=1819050627]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 45
 
@@ -25,10 +27,11 @@ dir = 45
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker2" unique_id=2122917974]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker3" type="Area3D" parent="." unique_id=1941910773]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 90
 
@@ -36,10 +39,11 @@ dir = 90
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker3" unique_id=1829295448]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker4" type="Area3D" parent="." unique_id=527405894]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 135
 
@@ -47,10 +51,11 @@ dir = 135
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker4" unique_id=1659872867]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker5" type="Area3D" parent="." unique_id=565226999]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 180
 
@@ -58,10 +63,11 @@ dir = 180
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker5" unique_id=1485271014]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker6" type="Area3D" parent="." unique_id=1276147358]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 225
 
@@ -69,10 +75,11 @@ dir = 225
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker6" unique_id=928561956]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker7" type="Area3D" parent="." unique_id=2118882773]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 260
 
@@ -80,10 +87,11 @@ dir = 260
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker7" unique_id=326265938]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="explosion_maker8" type="Area3D" parent="." unique_id=1891333623]
+collision_layer = 0
 script = ExtResource("1_fxfyw")
 dir = 315
 
@@ -91,7 +99,7 @@ dir = 315
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker8" unique_id=813146708]
-wait_time = 0.1
+wait_time = 0.2
 autostart = true
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=564633861]

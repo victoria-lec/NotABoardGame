@@ -5,6 +5,7 @@ extends CharacterBody3D
 
 var ready_to_rattle=false
 var state=0
+var health = 200
 
 #0:idle
 #1:walking
@@ -26,7 +27,8 @@ func _physics_process(delta: float) -> void:
 	var dir=local_dest.normalized()
 	
 	velocity=dir*3
-	move_and_slide()
+	if state == 1:
+		move_and_slide()
 	
 func _on_timer_timeout() -> void:
 	if state==0:
@@ -56,6 +58,7 @@ func _on_timer_timeout() -> void:
 			tracer(Globals.player_pos)
 		if ammo>=max_ammo:
 			state=1
+			ammo=0
 			$rattler_timer.start()
 			
 			
@@ -68,7 +71,10 @@ func _on_timer_timeout() -> void:
 
 
 func ouch(damage):
-	queue_free()
+	health -= damage
+	if health < 1:
+		queue_free()
+	#add voice lines for damage
 
 
 func _on_rattler_timer_timeout() -> void:
