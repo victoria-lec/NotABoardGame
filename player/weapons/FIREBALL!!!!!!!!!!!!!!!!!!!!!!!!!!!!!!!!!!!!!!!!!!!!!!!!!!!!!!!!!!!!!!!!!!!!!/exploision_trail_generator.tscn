@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://mhhofyeeyh5w"]
+
+[ext_resource type="Script" uid="uid://dktslqvssn7vd" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/explosion_maker.gd" id="1_fxfyw"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_12gb0"]
+radius = 0.2
+
+[node name="exploision_trail_generator" type="Node3D" unique_id=1693415431]
+
+[node name="explosion_maker" type="Area3D" parent="." unique_id=1434630810]
+script = ExtResource("1_fxfyw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker" unique_id=48269798]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker" unique_id=1342128279]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker2" type="Area3D" parent="." unique_id=1819050627]
+script = ExtResource("1_fxfyw")
+dir = 45
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker2" unique_id=1453288810]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker2" unique_id=2122917974]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker3" type="Area3D" parent="." unique_id=1941910773]
+script = ExtResource("1_fxfyw")
+dir = 90
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker3" unique_id=1280932860]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker3" unique_id=1829295448]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker4" type="Area3D" parent="." unique_id=527405894]
+script = ExtResource("1_fxfyw")
+dir = 135
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker4" unique_id=609912985]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker4" unique_id=1659872867]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker5" type="Area3D" parent="." unique_id=565226999]
+script = ExtResource("1_fxfyw")
+dir = 180
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker5" unique_id=10006231]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker5" unique_id=1485271014]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker6" type="Area3D" parent="." unique_id=1276147358]
+script = ExtResource("1_fxfyw")
+dir = 225
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker6" unique_id=551346452]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker6" unique_id=928561956]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker7" type="Area3D" parent="." unique_id=2118882773]
+script = ExtResource("1_fxfyw")
+dir = 260
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker7" unique_id=697689143]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker7" unique_id=326265938]
+wait_time = 0.1
+autostart = true
+
+[node name="explosion_maker8" type="Area3D" parent="." unique_id=1891333623]
+script = ExtResource("1_fxfyw")
+dir = 315
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker8" unique_id=546266307]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="explosion_maker8" unique_id=813146708]
+wait_time = 0.1
+autostart = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=564633861]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 20, 0)
+
+[connection signal="body_entered" from="explosion_maker" to="explosion_maker" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker/Timer" to="explosion_maker" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker2" to="explosion_maker2" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker2/Timer" to="explosion_maker2" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker3" to="explosion_maker3" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker3/Timer" to="explosion_maker3" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker4" to="explosion_maker4" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker4/Timer" to="explosion_maker4" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker5" to="explosion_maker5" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker5/Timer" to="explosion_maker5" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker6" to="explosion_maker6" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker6/Timer" to="explosion_maker6" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker7" to="explosion_maker7" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker7/Timer" to="explosion_maker7" method="_on_timer_timeout"]
+[connection signal="body_entered" from="explosion_maker8" to="explosion_maker8" method="_on_body_entered"]
+[connection signal="timeout" from="explosion_maker8/Timer" to="explosion_maker8" method="_on_timer_timeout"]
