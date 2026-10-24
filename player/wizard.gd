@@ -4,6 +4,8 @@ var speed=10
 var base_speed=10
 var max_speed=40
 
+var health = 100
+
 var damage=0
 var Jumpforce=10
 var mousedelta=Vector2()
@@ -112,4 +114,9 @@ func fire():
 	
 
 func ouch(dam):
-	print("die")
+	health -= dam
+	if health < 0:
+		health = 0
+	$CanvasLayer/Label.text = ('Health: ' + str(health))
+	if health < 1:
+		print('dead :/')
