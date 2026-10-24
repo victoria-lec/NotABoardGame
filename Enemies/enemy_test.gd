@@ -5,7 +5,7 @@ extends CharacterBody3D
 
 var ready_to_rattle=false
 var state=0
-var health = 60
+var health = 200
 
 #0:idle
 #1:walking
