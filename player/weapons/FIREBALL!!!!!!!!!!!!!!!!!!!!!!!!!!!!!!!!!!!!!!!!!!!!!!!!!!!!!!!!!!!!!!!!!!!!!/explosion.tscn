@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cbtocu270f1e4" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/explosion.gd" id="1_os4yd"]
 [ext_resource type="PackedScene" uid="uid://mhhofyeeyh5w" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/exploision_trail_generator.tscn" id="2_ilvpf"]
+[ext_resource type="PackedScene" uid="uid://bn3smiinxihlm" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/smoke_cloud.tscn" id="3_7wadv"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_42plh"]
 radius = 30.0
@@ -34,6 +35,9 @@ autostart = true
 
 [node name="exploision_trail_generator" parent="." unique_id=1693415431 instance=ExtResource("2_ilvpf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2162867, 0)
+
+[node name="smoke_cloud" parent="." unique_id=879127273 instance=ExtResource("3_7wadv")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
