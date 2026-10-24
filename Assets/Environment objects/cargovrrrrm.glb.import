@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dg3b0yv334f1l"
-path="res://.godot/imported/fountain.glb-d685a7b84186282f52f65de29468b94f.scn"
+uid="uid://5fd2i0reo6tp"
+path="res://.godot/imported/cargovrrrrm.glb-6e1d43ac976e61265b2a3ea68bc6b62d.scn"
 
 [deps]
 
-source_file="res://Assets/fountain.glb"
-dest_files=["res://.godot/imported/fountain.glb-d685a7b84186282f52f65de29468b94f.scn"]
+source_file="res://Assets/Environment objects/cargovrrrrm.glb"
+dest_files=["res://.godot/imported/cargovrrrrm.glb-6e1d43ac976e61265b2a3ea68bc6b62d.scn"]
 
 [params]
 
