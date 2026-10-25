@@ -1,0 +1,168 @@
+[gd_scene format=4 uid="uid://tbmfkipi2lsg"]
+
+[ext_resource type="Texture2D" uid="uid://c1gt8131ctgvu" path="res://Assets/block_lores_concrete.jpg" id="1_fj0xp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhthv"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_fj0xp")
+roughness = 0.5
+texture_filter = 2
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d2ieo"]
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1.2626579, 2),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rh77u"]
+resource_name = "block_Cube_001"
+_surfaces = [{
+"aabb": AABB(-1, 0, -1, 2, 1.2626579, 2),
+"attribute_data": PackedByteArray("qCrO0FbVMC+oKjAvVtXO0KgqztBW1TAvqCowL1bVztBW1c7QqCowL1bVMC+oKs7QVtXO0KgqMC9W1TAvqCrO0KgqAABW1f//VtUAAKgq//9W1QAAqCr//6gqAABW1f//"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_rhthv"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAAAAP//AAAAAP+//////////7//////AAD/v///AAD///+///8AAP//AIAAAP////8AgP///////wCAAAAAAP//AIAAAAAAAAD/P///AAD///8///8AAAAA/z8AAAAA////P/////8AAP+/AAD//////78AAP//AAD/v/////////+//z//f/8//3//P/9//z//f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3////9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_d2ieo")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_twu3w"]
+points = PackedVector3Array(0.97994477, 1.2627, 0.97994477, -0.9912921, 0, -0.9912921, -0.9912921, 0, 0.9912921, 0.9912921, 0, -0.9912921, -0.97994477, 1.2627, -0.97994477, 0.9912921, 0, 0.9912921, -0.97994477, 1.2627, 0.97994477, 0.97994477, 1.2627, -0.97994477)
+
+[node name="Floor 3" type="Node3D" unique_id=1368592799]
+
+[node name="Basic_block" type="MeshInstance3D" parent="." unique_id=814049085 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.260202, 0)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block" unique_id=1931554641 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block/StaticBody3D" unique_id=1433670246 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block2" type="MeshInstance3D" parent="." unique_id=273586912 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.260202, 0)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block2" unique_id=572495758 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block2/StaticBody3D" unique_id=223444440 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block3" type="MeshInstance3D" parent="." unique_id=1382550915 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.260202, 0)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block3" unique_id=1649239682 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block3/StaticBody3D" unique_id=1843016167 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block4" type="MeshInstance3D" parent="." unique_id=1337100163 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1.260202, 0)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block4" unique_id=1392332529 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block4/StaticBody3D" unique_id=1981798030 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block5" type="MeshInstance3D" parent="." unique_id=1659770860 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1.260202, -2)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block5" unique_id=1489438717 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block5/StaticBody3D" unique_id=126370506 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block6" type="MeshInstance3D" parent="." unique_id=739235717 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1.260202, -4)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block6" unique_id=17084384 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block6/StaticBody3D" unique_id=704480128 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block7" type="MeshInstance3D" parent="." unique_id=2128520970 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1.260202, -6)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block7" unique_id=347264626 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block7/StaticBody3D" unique_id=809776589 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block8" type="MeshInstance3D" parent="." unique_id=1793693213 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.260202, -6)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block8" unique_id=943315271 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block8/StaticBody3D" unique_id=1262590732 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block9" type="MeshInstance3D" parent="." unique_id=170027695 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.260202, -6)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block9" unique_id=633543086 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block9/StaticBody3D" unique_id=1063728367 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block10" type="MeshInstance3D" parent="." unique_id=1307189368 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.260202, -6)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block10" unique_id=1920716882 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block10/StaticBody3D" unique_id=1771714451 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block11" type="MeshInstance3D" parent="." unique_id=429466644 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.260202, -4)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block11" unique_id=1794161755 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block11/StaticBody3D" unique_id=332448448 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")
+
+[node name="Basic_block12" type="MeshInstance3D" parent="." unique_id=2131255510 groups=["land"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1.260202, -2)
+mesh = SubResource("ArrayMesh_rh77u")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_block12" unique_id=936380852 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_block12/StaticBody3D" unique_id=898954979 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_twu3w")

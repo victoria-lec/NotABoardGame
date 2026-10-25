@@ -109,7 +109,11 @@ roughness = 0.5
 texture_filter = 2
 metadata/_gltf_primary_texture_coord = 0
 
+<<<<<<< Updated upstream
 [sub_resource type="ArrayMesh" id="ArrayMesh_ipaoa"]
+=======
+[sub_resource type="ArrayMesh" id="ArrayMesh_se73v"]
+>>>>>>> Stashed changes
 _surfaces = [{
 "aabb": AABB(-1, 0, -1, 2, 1.2626579, 2),
 "format": 34896613377,
@@ -139,7 +143,11 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAAAAP//AAAAAP+//////////7//////AAD/v///AAD///+///8AAP//AIAAAP////8AgP///////wCAAAAAAP//AIAAAAAAAAD/P///AAD///8///8AAAAA/z8AAAAA////P/////8AAP+/AAD//////78AAP//AAD/v/////////+//z//f/8//3//P/9//z//f////3////9/////f////3//fwAA/38AAP9/AAD/fwAA/3////9/////f////3///wAA/38AAP9/AAD/fwAA/3////9/////f////3////9/")
 }]
 blend_shape_mode = 0
+<<<<<<< Updated upstream
 shadow_mesh = SubResource("ArrayMesh_ipaoa")
+=======
+shadow_mesh = SubResource("ArrayMesh_se73v")
+>>>>>>> Stashed changes
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6aac4"]
 points = PackedVector3Array(0.97994477, 1.2627, 0.97994477, -0.9912921, 0, -0.9912921, -0.9912921, 0, 0.9912921, 0.9912921, 0, -0.9912921, -0.97994477, 1.2627, -0.97994477, 0.9912921, 0, 0.9912921, -0.97994477, 1.2627, 0.97994477, 0.97994477, 1.2627, -0.97994477)
@@ -940,7 +948,7 @@ albedo_texture = ExtResource("9_u2xh7")
 roughness = 0.5
 metadata/_gltf_primary_texture_coord = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_se73v"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_76jku"]
 _surfaces = [{
 "aabb": AABB(-1, 0, -1, 2, 1e-05, 2),
 "format": 34896613377,
@@ -970,7 +978,7 @@ _surfaces = [{
 "vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_se73v")
+shadow_mesh = SubResource("ArrayMesh_76jku")
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5sykp"]
 points = PackedVector3Array(1.0158731, 0.015873017, 1.0158731, -1.0158731, -0.015873017, -1.0158731, -1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, -1.0158731, -1.0158731, -0.015873017, 1.0158731, -1.0158731, 0.015873017, 1.0158731, 1.0158731, 0.015873017, -1.0158731, 1.0158731, -0.015873017, 1.0158731)
@@ -1533,6 +1541,7 @@ mesh = SubResource("ArrayMesh_w3opr")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="tile/Basic_tile" unique_id=1652828546]
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tile/Basic_tile/StaticBody3D" unique_id=875767856]
 shape = SubResource("ConvexPolygonShape3D_5sykp")
