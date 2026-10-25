@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ca7185w4xtqkj"]
 
-[ext_resource type="MeshLibrary" uid="uid://cjsmikx7p6id3" path="res://Assets/Tiles/Gridmap2.meshlib" id="1_cpfj1"]
+[ext_resource type="MeshLibrary" uid="uid://bljn72wd68ner" path="res://Chartest2.meshlib" id="1_cpfj1"]
 [ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="2_cpfj1"]
 [ext_resource type="PackedScene" uid="uid://c3qk8yf1dw35u" path="res://Enemies/Enemy test.tscn" id="3_cpfj1"]
 
@@ -30,7 +30,7 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=644369313]
 environment = SubResource("Environment_m82j1")
 
-[node name="GridMap" type="GridMap" parent="." unique_id=738007673]
+[node name="GridMap" type="GridMap" parent="." unique_id=738007673 groups=["land"]]
 mesh_library = ExtResource("1_cpfj1")
 cell_size = Vector3(4, 4, 4)
 cell_center_y = false
