@@ -154,4 +154,4 @@ func ouch(dam):
 	if health < 1:
 		var img=get_viewport().get_texture().get_image()
 		Globals.scene_texture=ImageTexture.create_from_image(img)
-		get_tree().call_deferred("change_scene_to_file", "res://UI/game_over.tscn")
+		get_tree().call_deferred("change_scene_to_file", "res://UI/main_menu.tscn")

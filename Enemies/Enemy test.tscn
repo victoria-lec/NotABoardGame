@@ -1,16 +1,29 @@
 [gd_scene format=3 uid="uid://c3qk8yf1dw35u"]
 
-[ext_resource type="Texture2D" uid="uid://cqh3symvyo08l" path="res://icon.svg" id="1_k7sfc"]
 [ext_resource type="Script" uid="uid://blhcjmejhdkqk" path="res://Enemies/enemy_test.gd" id="1_nabwb"]
+[ext_resource type="Texture2D" uid="uid://30duckg51ib4" path="res://Enemies/001.png" id="2_imoo6"]
+[ext_resource type="Texture2D" uid="uid://baqesx4usn6kj" path="res://Enemies/002.png" id="3_vm0js"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0oy0n"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7sfc"]
-albedo_texture = ExtResource("1_k7sfc")
-billboard_mode = 2
-
-[sub_resource type="QuadMesh" id="QuadMesh_0oy0n"]
-material = SubResource("StandardMaterial3D_k7sfc")
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_imoo6")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_vm0js")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
 
 [node name="EnemyTest" type="CharacterBody3D" unique_id=851749460 groups=["enemy"]]
 collision_layer = 3
@@ -18,10 +31,6 @@ script = ExtResource("1_nabwb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=488624790]
 shape = SubResource("CapsuleShape3D_0oy0n")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=719984818]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1920929e-07, 0)
-mesh = SubResource("QuadMesh_0oy0n")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1609583801]
 debug_enabled = true
@@ -36,6 +45,10 @@ collision_mask = 3
 [node name="rattler_timer" type="Timer" parent="." unique_id=1187818608]
 wait_time = 3.0
 one_shot = true
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1892590068]
+sprite_frames = SubResource("SpriteFrames_12gb0")
+animation = &"new_animation"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="rattler_timer" to="." method="_on_rattler_timer_timeout"]
