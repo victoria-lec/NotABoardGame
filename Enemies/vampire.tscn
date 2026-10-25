@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://ewf0d3k7gv1"]
+
+[ext_resource type="Texture2D" uid="uid://cqh3symvyo08l" path="res://icon.svg" id="1_3j2av"]
+[ext_resource type="Script" uid="uid://dx6egk6v4vj1o" path="res://Enemies/vampire.gd" id="1_vsttm"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3j2av")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_12gb0"]
+
+[node name="vampire" type="CharacterBody3D" unique_id=2139767624 groups=["enemy"]]
+script = ExtResource("1_vsttm")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1844874042]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1618693236]
+shape = SubResource("CapsuleShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="." unique_id=1525882065]
+wait_time = 0.1
+
+[node name="rattler_timer" type="Timer" parent="." unique_id=1614157043]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=267718117]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_12gb0")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2035695997]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=1961325573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0232887)
+shape = SubResource("BoxShape3D_12gb0")
+disabled = true
+
+[connection signal="animation_finished" from="AnimatedSprite3D" to="." method="_on_animated_sprite_3d_animation_finished"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

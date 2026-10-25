@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://75ti4ut52ffo"]
+
+[ext_resource type="Script" uid="uid://c1s5cgqawq05x" path="res://Enemies/monster_enegy.gd" id="1_keav6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ux24b"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_12gb0"]
+
+[node name="monster_enegy" type="CharacterBody3D" unique_id=9261251]
+script = ExtResource("1_keav6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1861869267]
+mesh = SubResource("BoxMesh_ux24b")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1693969302]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=193002915]
+shape = SubResource("SphereShape3D_12gb0")

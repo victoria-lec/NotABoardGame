@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dbj0e64j3pol8"]
+
+[ext_resource type="Script" uid="uid://cvuib6i5t35uj" path="res://Enemies/demon.gd" id="1_240pl"]
+[ext_resource type="Texture2D" uid="uid://cqh3symvyo08l" path="res://icon.svg" id="2_7f2hv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7f2hv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="demon" type="CharacterBody3D" unique_id=59935190]
+script = ExtResource("1_240pl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=670635255]
+shape = SubResource("CapsuleShape3D_12gb0")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=11094544]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_12gb0")
+
+[node name="Timer" type="Timer" parent="." unique_id=1019673982]
+one_shot = true
+
+[node name="rattler_timer" type="Timer" parent="." unique_id=373526018]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=354378405]
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=213598641]
