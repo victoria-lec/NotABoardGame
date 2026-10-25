@@ -88,6 +88,10 @@ func tracer(target:Vector3):
 
 func attack():
 	
+	var coin=randi_range(1,10)
+	if coin==10:
+		$AudioStreamPlayer3D.play()
+	
 	$Area3D.look_at(Globals.player_pos)
 	$Area3D/CollisionShape3D2.disabled=false
 	
