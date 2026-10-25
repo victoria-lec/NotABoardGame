@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://60ywlqsd5q3t"]
+
+[ext_resource type="PackedScene" uid="uid://3rbc4776re7a" path="res://Assets/tree.glb" id="1_yjket"]
+[ext_resource type="Shader" uid="uid://bwsqiujn14ovu" path="res://burn.gdshader" id="2_2dr1h"]
+[ext_resource type="Texture2D" uid="uid://ohfvp0riaggv" path="res://Assets/tree.png" id="3_nl0sb"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_2dr1h"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yjket"]
+noise = SubResource("FastNoiseLite_2dr1h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_28dkk"]
+render_priority = 0
+shader = ExtResource("2_2dr1h")
+shader_parameter/noise = SubResource("NoiseTexture2D_yjket")
+shader_parameter/albedo = Color(0.8, 0.8, 0.85, 1)
+shader_parameter/albedo_texture = ExtResource("3_nl0sb")
+shader_parameter/roughness = 0.94800004503
+shader_parameter/metallic = 0.0
+shader_parameter/dissolve = 0.262000012445
+shader_parameter/edge_width = 0.0450000021375
+shader_parameter/edge_color = Color(1, 0.45, 0.1, 1)
+shader_parameter/edge_energy = 6.0
+shader_parameter/noise_scale = 21.78
+shader_parameter/use_world_space = false
+
+[node name="tree2" unique_id=1753092674 instance=ExtResource("1_yjket")]
+
+[node name="tree" parent="." index="0" unique_id=956579546]
+surface_material_override/0 = SubResource("ShaderMaterial_28dkk")
