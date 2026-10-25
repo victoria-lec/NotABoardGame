@@ -75,6 +75,9 @@ func _on_rattler_timer_timeout() -> void:
 
 
 func attack():
+	var coin=randi_range(1,10)
+	if coin==10:
+		$AudioStreamPlayer3D.play()
 	var can = monster.instantiate()
 	get_tree().get_root().add_child(can)
 	can.global_position = global_position

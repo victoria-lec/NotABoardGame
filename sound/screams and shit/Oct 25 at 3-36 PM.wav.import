@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://rqr76vmdfgn4"
+path="res://.godot/imported/Oct 25 at 3-36 PM.wav-568118a69acebff8cf40dd4696af1091.sample"
+
+[deps]
+
+source_file="res://sound/screams and shit/Oct 25 at 3-36 PM.wav"
+dest_files=["res://.godot/imported/Oct 25 at 3-36 PM.wav-568118a69acebff8cf40dd4696af1091.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

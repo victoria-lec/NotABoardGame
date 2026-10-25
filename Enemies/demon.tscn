@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://dbj0e64j3pol8"]
 
 [ext_resource type="Script" uid="uid://cvuib6i5t35uj" path="res://Enemies/demon.gd" id="1_240pl"]
-[ext_resource type="Texture2D" uid="uid://dgllcc73xcni3" path="res://Assets/Enemies/enemy01/Group 7.PNG" id="2_i6i20"]
-[ext_resource type="Texture2D" uid="uid://cgflm70x7kamp" path="res://Assets/Enemies/enemy01/Group 6.PNG" id="3_tulor"]
-[ext_resource type="Texture2D" uid="uid://c7kp78or63d00" path="res://Assets/Enemies/enemy01/Group 5.PNG" id="4_bto25"]
-[ext_resource type="Texture2D" uid="uid://cv84hfyyixxl6" path="res://Assets/Enemies/enemy01/Group 4.PNG" id="5_iux5s"]
-[ext_resource type="Texture2D" uid="uid://bufv6h3imuf5" path="res://Assets/Enemies/enemy01/Group 2.PNG" id="6_m88bd"]
-[ext_resource type="Texture2D" uid="uid://diycj0ivtedtc" path="res://Assets/Enemies/enemy01/Group 1.PNG" id="7_8nxkl"]
+[ext_resource type="Texture2D" uid="uid://cieqq0hvmew80" path="res://Assets/Enemies/enemy01/Group 7.PNG" id="2_i6i20"]
+[ext_resource type="Texture2D" uid="uid://c4vtplcyxrqhv" path="res://Assets/Enemies/enemy01/Group 6.PNG" id="3_tulor"]
+[ext_resource type="Texture2D" uid="uid://by52ycna0ggpw" path="res://Assets/Enemies/enemy01/Group 5.PNG" id="4_bto25"]
+[ext_resource type="Texture2D" uid="uid://byh0npehh4g8t" path="res://Assets/Enemies/enemy01/Group 4.PNG" id="5_iux5s"]
+[ext_resource type="Texture2D" uid="uid://cbr16ntd702g0" path="res://Assets/Enemies/enemy01/Group 2.PNG" id="6_m88bd"]
+[ext_resource type="Texture2D" uid="uid://ba50w61134uks" path="res://Assets/Enemies/enemy01/Group 1.PNG" id="7_8nxkl"]
+[ext_resource type="AudioStream" uid="uid://bhahyksf63mw3" path="res://sound/screams and shit/Oct 25 at 3-38 PM(3).wav" id="8_tulor"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
 
@@ -65,6 +66,9 @@ autostart = true
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=354378405]
 
 [node name="RayCast3D" type="RayCast3D" parent="." unique_id=213598641]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=90493904]
+stream = ExtResource("8_tulor")
 
 [connection signal="animation_finished" from="AnimatedSprite3D" to="." method="_on_animated_sprite_3d_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
