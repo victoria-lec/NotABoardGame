@@ -13,5 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_texture_button_pressed() -> void:
 	pass
-	#get_tree().call_deferred("change_scene_to_file", "res://UI/game_over.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://map/FinalmapV1.tscn")
 	##set_to main
