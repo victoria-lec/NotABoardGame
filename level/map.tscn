@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://j3ihx3qv40g5"]
+
+[ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="2_hwnpr"]
+
+[node name="map" type="Node3D" unique_id=408571910]
+
+[node name="wizard" parent="." unique_id=608797488 instance=ExtResource("2_hwnpr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5383668, 4.1054425, -4.6354094)
