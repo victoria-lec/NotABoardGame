@@ -45,21 +45,16 @@ func _on_body_entered(body: Node3D) -> void:
 			if exposed:
 				body.ouch(damage*falloff)
 				
-		else:
-			var ray=RayCast3D.new()
-			add_child(ray)
-			ray.position+=Vector3(0,0.5,0)
-			ray.target_position=to_local(body.global_position)
-			ray.force_raycast_update()
-			var dist := global_position.distance_to(body.global_position)
-			var falloff := 1.0 - clampf(dist / $CollisionShape3D.shape.radius, 0.0, 1.0)
-			if ray.get_collider() and ray.get_collider()==body:
-				body.ouch(damage*falloff)
+		var ray=RayCast3D.new()
+		add_child(ray)
+		ray.position+=Vector3(0,0.5,0)
+		ray.target_position=to_local(body.global_position)
+		ray.force_raycast_update()
+		var dist := global_position.distance_to(body.global_position)
+		var falloff := 1.0 - clampf(dist / $CollisionShape3D.shape.radius, 0.0, 1.0)
+		if ray.get_collider() and ray.get_collider()==body:
+			body.ouch(damage*falloff)
 			
-		
-	if body.is_in_group("land"):
-		print('hit')
-		body.material.set_shader_parameter("charred",1)
 
 
 func _on_timer_timeout() -> void:
