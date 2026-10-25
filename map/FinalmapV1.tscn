@@ -3144,6 +3144,16 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tile2/Basic_tile/StaticBody3D" unique_id=334948075 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jc1b2")
 
+[node name="Basic_tile2" type="MeshInstance3D" parent="tile2" unique_id=366728145 groups=["land"]]
+transform = Transform3D(2.3016534, 0, 0, 0, 1, 0, 0, 0, 1.9358431, -4.82822, 0.004740503, -2.3028445)
+mesh = SubResource("ArrayMesh_1getv")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tile2/Basic_tile2" unique_id=2033858838 groups=["land"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tile2/Basic_tile2/StaticBody3D" unique_id=1910329849 groups=["land"]]
+shape = SubResource("ConvexPolygonShape3D_jc1b2")
+
 [node name="Grass289" type="MeshInstance3D" parent="." unique_id=560372439 groups=["land"]]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 4, 0, -42)
 mesh = SubResource("ArrayMesh_7haxy")
@@ -4105,7 +4115,7 @@ transform = Transform3D(13.221132, 0, 0, 0, 13.221132, 0, 0, 0, 13.221132, 10.93
 transform = Transform3D(13.221132, 0, 0, 0, 13.221132, 0, 0, 0, 13.221132, 4.9325886, 0.3171308, -13.282581)
 
 [node name="wizard" parent="." unique_id=608797488 instance=ExtResource("6_3r873")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.48077, 1.015873, -38.144913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112.48454, 1.015873, -68.66832)
 
 [node name="block" parent="." unique_id=838860061 instance=ExtResource("7_3r873")]
 transform = Transform3D(2.7387376, 0, 0, 0, 2.7387376, 0, 0, 0, 2.7387376, 2.2929502, 0.015873075, -41.12539)
@@ -4134,6 +4144,16 @@ transform = Transform3D(2.7387376, 0, 0, 0, 2.7387376, 0, 0, 0, 2.7387376, -12.2
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block5/StaticBody3D" unique_id=575955112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011047363, 0.54403687, 0.004638672)
+shape = SubResource("BoxShape3D_jghuu")
+
+[node name="block6" parent="." unique_id=290667105 instance=ExtResource("7_3r873")]
+transform = Transform3D(5.6741056, 0, 0, 0, 5.6741056, 0, 0, 0, 5.6741056, 146.08928, -1.8205422, -70.91604)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block6" unique_id=1250116382 groups=["land"]]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="block6/StaticBody3D" unique_id=2042012400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011047363, 0.54403687, 0.004638672)
 shape = SubResource("BoxShape3D_jghuu")
 
