@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cixkje5htglig"]
+
+[ext_resource type="PackedScene" uid="uid://dhdcksswi4f40" path="res://block.glb" id="1_ys4u3"]
+[ext_resource type="Texture2D" uid="uid://c1gt8131ctgvu" path="res://Assets/block_lores_concrete.jpg" id="2_d5ap3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7haxy"]
+albedo_texture = ExtResource("2_d5ap3")
+texture_filter = 0
+
+[node name="block" unique_id=838860061 instance=ExtResource("1_ys4u3")]
+
+[node name="Cube" parent="." index="0" unique_id=1821023899]
+surface_material_override/0 = SubResource("StandardMaterial3D_7haxy")

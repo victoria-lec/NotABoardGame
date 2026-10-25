@@ -8,6 +8,7 @@ height = 1.0048828
 radius = 0.08642578
 
 [node name="Treebody" type="StaticBody3D" unique_id=855919960]
+collision_layer = 3
 script = ExtResource("1_tstou")
 
 [node name="tree2" parent="." unique_id=1753092674 instance=ExtResource("2_tstou")]
