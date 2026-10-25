@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://di4026cyss73v"]
 
 [ext_resource type="Script" uid="uid://dg6obcuijm1kj" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/fireball.gd" id="1_urka4"]
-[ext_resource type="Texture2D" uid="uid://cw8uy013tq0vt" path="res://Assets/ball/0045.png" id="2_rs3y8"]
+[ext_resource type="Texture2D" uid="uid://bgjevxlkyh4f" path="res://Assets/ball/0045.png" id="2_rs3y8"]
 [ext_resource type="Texture2D" uid="uid://bm6kyqiqsmmap" path="res://Assets/ball/0044.png" id="3_i7pn8"]
 [ext_resource type="Texture2D" uid="uid://bniaeul7fmbnj" path="res://Assets/ball/0043.png" id="4_wqiy5"]
 [ext_resource type="Texture2D" uid="uid://dmw6wthshtlkh" path="res://Assets/ball/0042.png" id="5_k56kr"]
@@ -153,6 +153,7 @@ light_energy = 4.78
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=518356587]
 visible = false
 billboard = 2
+texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_12gb0")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
