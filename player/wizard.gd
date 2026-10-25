@@ -152,4 +152,6 @@ func ouch(dam):
 		health = 0
 	$CanvasLayer/Label.text = ('Health: ' + str(health))
 	if health < 1:
-		print('dead :/')
+		var img=get_viewport().get_texture().get_image()
+		Globals.scene_texture=ImageTexture.create_from_image(img)
+		get_tree().call_deferred("change_scene_to_file", "res://UI/game_over.tscn")

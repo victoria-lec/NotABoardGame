@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bbnxccq2m8nyv"]
+
+[ext_resource type="MeshLibrary" uid="uid://dajo0cal88yl3" path="res://Assets/FinalGridmapV1.meshlib" id="1_1463r"]
+
+[node name="FinalmapV1" type="Node3D" unique_id=763107207]
+
+[node name="GridMap" type="GridMap" parent="." unique_id=400725992]
+mesh_library = ExtResource("1_1463r")
+cell_scale = 2.0
+data = {
+"cells": PackedInt32Array(65535, 0, 1, 0, 0, 1, 65535, 65535, 1, 0, 65535, 1)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
