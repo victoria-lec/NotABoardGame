@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cbltyc7a61jbx"]
+
+[ext_resource type="Script" uid="uid://bfndpp022tbto" path="res://Enemies/skelleton_bullet.gd" id="1_bpiuv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_12gb0"]
+size = Vector3(0.01, 0.01, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" unique_id=143683111]
+mesh = SubResource("BoxMesh_12gb0")
+script = ExtResource("1_bpiuv")

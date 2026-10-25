@@ -13,7 +13,7 @@ var Sensetivity=10
 var minlookangle: float = -90.0
 var maxlookangle: float = 90.0
 
-var guncooldown = 0
+var guncooldown = false
 var guncooldown_timer=guncooldown
 var altfirecooldown=0
 var altfirecooldown_timer=0
@@ -29,6 +29,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var fireball=preload("res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/fireball.tscn")
 
 func _ready():
+	$CanvasLayer/Sprite2D.play()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
@@ -76,11 +77,11 @@ func _input(event):
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			mousedelta += event.relative 
 
-	# Esc releases the mouse (useful for debugging / pause menus)
+	
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
-	# Click to recapture
+	
 	if event is InputEventMouseButton and event.pressed:
 		if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -112,27 +113,36 @@ func _process(delta):
 
 
 func fire():
-	guncooldown_timer+=1
-	altfirecooldown_timer+=1
-	if startup==true:
-		
-		altfirecooldown=120
-		guncooldown=10
-		damage=1
-		startup=false
+	if Input.is_action_pressed("shoot") and guncooldown==false:
+		if $CanvasLayer/Sprite2D.scale<=Vector2(4,4):
+			$CanvasLayer/Sprite2D.scale+=Vector2(0.05,0.05)
+	else :
+		if $CanvasLayer/Sprite2D.scale>=Vector2(1,1):
+			$CanvasLayer/Sprite2D.scale-=Vector2(0.01,0.01)
 	
 		
-	if Input.is_action_just_released("shoot"):
-		var firball_inst=fireball.instantiate()
-		get_tree().get_root().call_deferred("add_child",firball_inst)
+	if Input.is_action_just_released("shoot") and guncooldown==false:
+		if $CanvasLayer/Sprite2D.scale>=Vector2(3.5,3.5):
+			guncooldown=true
+			var firball_inst=fireball.instantiate()
+			get_tree().get_root().call_deferred("add_child",firball_inst)
 		
-		firball_inst.rotation=$Camera3D.rotation
-		firball_inst.global_transform=$Camera3D.global_transform
-		var dir=-$Camera3D.global_transform.basis.z
-		firball_inst.apply_central_impulse(6.0*dir)
+			firball_inst.rotation=$Camera3D.rotation
+			firball_inst.global_transform=$Camera3D.global_transform
+			var dir=-$Camera3D.global_transform.basis.z
+			firball_inst.apply_central_impulse(7.0*dir)
 		
-		secondary_fire=false
-		altfirecooldown_timer=0
+			secondary_fire=false
+			altfirecooldown_timer=0
+			$CanvasLayer/Sprite2D.hide()
+			await get_tree().create_timer(0.3).timeout
+			$CanvasLayer/Sprite2D.scale=Vector2(0.1,0.1)
+			$CanvasLayer/Sprite2D.show()
+			var tw=create_tween()
+			tw.tween_property($CanvasLayer/Sprite2D,"scale",Vector2(1,1),0.3)
+			guncooldown=false
+	
+			
 		
 	
 

@@ -3,11 +3,143 @@
 [ext_resource type="Script" uid="uid://bfy8rd542uwj1" path="res://player/wizard.gd" id="1_3dheo"]
 [ext_resource type="Script" uid="uid://cuabm1212tkc1" path="res://player/label.gd" id="2_la7br"]
 [ext_resource type="PackedScene" uid="uid://dphcpicw05mul" path="res://Globals/hopper.tscn" id="3_31ajc"]
+[ext_resource type="Texture2D" uid="uid://cw8uy013tq0vt" path="res://Assets/ball/0045.png" id="3_kh12u"]
+[ext_resource type="Texture2D" uid="uid://bm6kyqiqsmmap" path="res://Assets/ball/0044.png" id="4_8qimv"]
 [ext_resource type="AudioStream" uid="uid://dmkh6lb3crpjs" path="res://Assets/loop.mp3" id="4_g12lj"]
+[ext_resource type="Texture2D" uid="uid://bniaeul7fmbnj" path="res://Assets/ball/0043.png" id="5_ly3fc"]
+[ext_resource type="Texture2D" uid="uid://dmw6wthshtlkh" path="res://Assets/ball/0042.png" id="6_m3sad"]
+[ext_resource type="Texture2D" uid="uid://c3io2emul1rm" path="res://Assets/ball/0041.png" id="7_dxgsc"]
+[ext_resource type="Texture2D" uid="uid://rfbnafo7kwv3" path="res://Assets/ball/0040.png" id="8_ryt23"]
+[ext_resource type="Texture2D" uid="uid://bfpja0pafckf7" path="res://Assets/ball/0039.png" id="9_h0q40"]
+[ext_resource type="Texture2D" uid="uid://cs5loahxc1dyr" path="res://Assets/ball/0038.png" id="10_fl0mc"]
+[ext_resource type="Texture2D" uid="uid://1mffohxediac" path="res://Assets/ball/0037.png" id="11_uypc4"]
+[ext_resource type="Texture2D" uid="uid://ce8asmsv5q1gx" path="res://Assets/ball/0036.png" id="12_rbeya"]
+[ext_resource type="Texture2D" uid="uid://bd1guim1dr5on" path="res://Assets/ball/0035.png" id="13_58qdn"]
+[ext_resource type="Texture2D" uid="uid://modmqnle0ykj" path="res://Assets/ball/0034.png" id="14_8lor7"]
+[ext_resource type="Texture2D" uid="uid://bdjp6o7s15fng" path="res://Assets/ball/0033.png" id="15_p1e1u"]
+[ext_resource type="Texture2D" uid="uid://cmnowau7jbxly" path="res://Assets/ball/0032.png" id="16_ujhlr"]
+[ext_resource type="Texture2D" uid="uid://bqcpurgsc1ltf" path="res://Assets/ball/0031.png" id="17_31gno"]
+[ext_resource type="Texture2D" uid="uid://dn57myfdca5mn" path="res://Assets/ball/0030.png" id="18_w2l7r"]
+[ext_resource type="Texture2D" uid="uid://cq4pytaw4vqrk" path="res://Assets/ball/0029.png" id="19_xkimv"]
+[ext_resource type="Texture2D" uid="uid://bbvjtuuq00dv0" path="res://Assets/ball/0028.png" id="20_hovww"]
+[ext_resource type="Texture2D" uid="uid://dto4snsqr87cs" path="res://Assets/ball/0027.png" id="21_lt2lv"]
+[ext_resource type="Texture2D" uid="uid://cghoi528m30cr" path="res://Assets/ball/0026.png" id="22_10jdg"]
+[ext_resource type="Texture2D" uid="uid://onoj6e5yomvc" path="res://Assets/ball/0025.png" id="23_q7mh8"]
+[ext_resource type="Texture2D" uid="uid://bulmwe8455r68" path="res://Assets/ball/0024.png" id="24_5tyba"]
+[ext_resource type="Texture2D" uid="uid://00yf4drwic3c" path="res://Assets/ball/0023.png" id="25_n2wb1"]
+[ext_resource type="Texture2D" uid="uid://blebcr5crsw3t" path="res://Assets/ball/0022.png" id="26_x46mx"]
+[ext_resource type="Texture2D" uid="uid://xqekxb3svebl" path="res://Assets/ball/0021.png" id="27_87p8v"]
+[ext_resource type="Texture2D" uid="uid://iolhqwggm06b" path="res://Assets/ball/0020.png" id="28_s1s8g"]
+[ext_resource type="Texture2D" uid="uid://b4kgk512oq8f8" path="res://Assets/ball/0019.png" id="29_isxhl"]
+[ext_resource type="Texture2D" uid="uid://dnpw6qnbhod3d" path="res://Assets/ball/0018.png" id="30_k4w6j"]
+[ext_resource type="Texture2D" uid="uid://cw3li78a4wk8d" path="res://Assets/ball/0017.png" id="31_011rq"]
+[ext_resource type="Texture2D" uid="uid://cuaq5mutg3i8l" path="res://Assets/ball/0016.png" id="32_o4gvf"]
+[ext_resource type="Texture2D" uid="uid://dh85gcxk4lfho" path="res://Assets/ball/0015.png" id="33_vm6av"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_12gb0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_kh12u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8qimv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ly3fc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m3sad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dxgsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ryt23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h0q40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fl0mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uypc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rbeya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_58qdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8lor7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_p1e1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ujhlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_31gno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_w2l7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xkimv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hovww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_lt2lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_10jdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_q7mh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5tyba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_n2wb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_x46mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_87p8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_s1s8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_isxhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_k4w6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_011rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_o4gvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vm6av")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="wizard" type="CharacterBody3D" unique_id=608797488 groups=["player"]]
 collision_layer = 3
@@ -32,6 +164,11 @@ target_position = Vector3(0, 0, -999999)
 offset_right = 797.0
 offset_bottom = 80.0
 script = ExtResource("2_la7br")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=331294723]
+position = Vector2(1521, 900)
+sprite_frames = SubResource("SpriteFrames_12gb0")
+frame_progress = 0.6141088
 
 [node name="hopper" parent="." unique_id=2028513549 instance=ExtResource("3_31ajc")]
 

@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var monster=preload("res://Enemies/monster_enegy.tscn")
 var ready_to_strike=false
 var state=0
-var health = 200
+var health = 210
 var charge_dir=Vector3()
 #0:idle
 #1:walking
@@ -15,9 +15,6 @@ var speed=4
 var max_ammo=30
 var ammo=0
 
-func _process(delta: float) -> void:
-	if state==0:
-		$RayCast3D.target_position
 
 
 
@@ -27,10 +24,9 @@ func _physics_process(delta: float) -> void:
 	var dir=local_dest.normalized()
 	
 	velocity=dir*speed
-	if Input.is_action_just_pressed("ui_accept"):
-		attack()
 	
-	move_and_slide()
+	if state==1:
+		move_and_slide()
 	
 func _on_timer_timeout() -> void:
 	if state==0:
@@ -49,7 +45,8 @@ func _on_timer_timeout() -> void:
 			$RayCast3D.force_raycast_update()
 			if $RayCast3D.get_collider() and $RayCast3D.get_collider().is_in_group("player"):
 				ready_to_strike=false
-				#animate
+				state=2
+				$AnimatedSprite3D.play("default")
 
 
 			
@@ -91,10 +88,11 @@ func attack():
 	can.hight = Vector3(0, 4.0 * H / (T * T), 0)
 
 func _on_animated_sprite_3d_animation_finished() -> void:
-	attack()
-	await get_tree().create_timer(2.0).timeout
-	$rattler_timer.start()
-	state=1
+	if state==2:
+		attack()
+		await get_tree().create_timer(2.0).timeout
+		$rattler_timer.start()
+		state=1
 
 
 func _on_area_3d_body_entered(body: Node3D) -> void:

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://pe05jqwurlsk"]
 
 [ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="1_r3ype"]
-[ext_resource type="PackedScene" uid="uid://dbj0e64j3pol8" path="res://Enemies/demon.tscn" id="2_obl25"]
+[ext_resource type="PackedScene" uid="uid://c3qk8yf1dw35u" path="res://Enemies/Enemy test.tscn" id="2_obl25"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udwm0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -71,5 +71,4 @@ mesh = SubResource("BoxMesh_12gb0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 shape = SubResource("BoxShape3D_12gb0")
 
-[node name="demon" parent="." unique_id=59935190 instance=ExtResource("2_obl25")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5077744, 1.14, 3.3497505)
+[node name="EnemyTest" parent="." unique_id=851749460 instance=ExtResource("2_obl25")]
