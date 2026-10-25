@@ -1,6 +1,6 @@
 shader_type canvas_item;
 
-uniform sampler2D sceen_texture;
+uniform sampler2D sceen_texture: filter_linear_mipmap;
 
 void vertex() {
 	// Called for every vertex the material is visible on.
