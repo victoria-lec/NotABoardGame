@@ -13,6 +13,11 @@
 [ext_resource type="PackedScene" uid="uid://chvuh7isv7tgf" path="res://Assets/fountaintile4glb.glb" id="11_8v57k"]
 [ext_resource type="PackedScene" uid="uid://covmeyxj1df5a" path="res://Assets/Environment objects/building_1.tscn" id="12_jc1b2"]
 [ext_resource type="PackedScene" uid="uid://cmjpc7wrpy60a" path="res://Assets/Environment objects/cargovrrrrm.tscn" id="13_ygrjy"]
+[ext_resource type="PackedScene" uid="uid://c3qk8yf1dw35u" path="res://Enemies/Enemy test.tscn" id="14_q7b80"]
+[ext_resource type="PackedScene" uid="uid://ewf0d3k7gv1" path="res://Enemies/vampire.tscn" id="15_4hja8"]
+[ext_resource type="PackedScene" uid="uid://dbj0e64j3pol8" path="res://Enemies/demon.tscn" id="16_ic33f"]
+[ext_resource type="PackedScene" uid="uid://bb2p75ajcwrbk" path="res://level/city.tscn" id="17_ic33f"]
+[ext_resource type="PackedScene" uid="uid://d4geeb5fwr461" path="res://Assets/Environment objects/cityscape.tscn" id="18_em3md"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dj287"]
 resource_name = "Material.001"
@@ -924,7 +929,7 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_3r873")
 
 [node name="Basic_tile" type="MeshInstance3D" parent="." unique_id=1743058107 groups=["land"]]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 24, -5, 0, 6)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 24, -5, 0.042664528, 6)
 mesh = SubResource("ArrayMesh_v37bv")
 skeleton = NodePath("")
 
@@ -1657,7 +1662,7 @@ shape = SubResource("ConvexPolygonShape3D_3r873")
 transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, -5, 0, -27)
 
 [node name="Basic_tile2" type="MeshInstance3D" parent="." unique_id=225591113 groups=["land"]]
-transform = Transform3D(-1.3113416e-07, 0, -9, 0, 3, 0, 3, 0, -3.934025e-07, -23, 0, -27)
+transform = Transform3D(-1.3113416e-07, 0, -9, 0, 3, 0, 3, 0, -3.934025e-07, -23, 0.042664528, -27)
 mesh = SubResource("ArrayMesh_v37bv")
 skeleton = NodePath("")
 
@@ -1667,7 +1672,7 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_e1qxy")
 
 [node name="Basic_tile3" type="MeshInstance3D" parent="." unique_id=1248542548 groups=["land"]]
-transform = Transform3D(-1.3113416e-07, 0, -9, 0, 3, 0, 3, 0, -3.934025e-07, 13, 0, -27)
+transform = Transform3D(-1.3113416e-07, 0, -9, 0, 3, 0, 3, 0, -3.934025e-07, 13, 0.042664528, -27)
 mesh = SubResource("ArrayMesh_v37bv")
 skeleton = NodePath("")
 
@@ -2397,7 +2402,7 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_3r873")
 
 [node name="Basic_tile4" type="MeshInstance3D" parent="." unique_id=801623935 groups=["land"]]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 24, -5, 0, -60)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 24, -5, 0.042664528, -60)
 mesh = SubResource("ArrayMesh_v37bv")
 skeleton = NodePath("")
 
@@ -3130,7 +3135,7 @@ shape = SubResource("ConvexPolygonShape3D_3r873")
 transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, -4, 0, -28)
 
 [node name="Basic_tile" type="MeshInstance3D" parent="tile2" unique_id=951572312 groups=["land"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.111111134, 0, 0.111111164)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.111111134, 0.004740503, 0.111111164)
 mesh = SubResource("ArrayMesh_1getv")
 skeleton = NodePath("")
 
@@ -4060,6 +4065,21 @@ skeleton = NodePath("")
 [node name="Treebody" parent="." unique_id=855919960 instance=ExtResource("5_7haxy")]
 transform = Transform3D(13.221132, 0, 0, 0, 13.221132, 0, 0, 0, 13.221132, 10.949108, 0.3171308, -20.057777)
 
+[node name="Treebody10" parent="." unique_id=2006626472 instance=ExtResource("5_7haxy")]
+transform = Transform3D(9.296916, 0, 9.400303, 0, 13.221132, 0, -9.400303, 0, 9.296916, 10.949108, 0.3171308, 18.197136)
+
+[node name="Treebody11" parent="." unique_id=1473824551 instance=ExtResource("5_7haxy")]
+transform = Transform3D(9.296916, 0, 9.400303, 0, 13.221132, 0, -9.400303, 0, 9.296916, 18.378086, 0.3171308, 14.409817)
+
+[node name="Treebody12" parent="." unique_id=361917448 instance=ExtResource("5_7haxy")]
+transform = Transform3D(9.296916, 0, 9.400303, 0, 13.221132, 0, -9.400303, 0, 9.296916, 1.1894569, 0.3171308, 14.409817)
+
+[node name="Treebody13" parent="." unique_id=1033949662 instance=ExtResource("5_7haxy")]
+transform = Transform3D(9.296916, 0, 9.400303, 0, 13.221132, 0, -9.400303, 0, 9.296916, -20.223476, 0.3171308, -56.966637)
+
+[node name="Treebody14" parent="." unique_id=441456913 instance=ExtResource("5_7haxy")]
+transform = Transform3D(9.296916, 0, 9.400303, 0, 13.221132, 0, -9.400303, 0, 9.296916, -13.668491, 0.3171308, -65.12395)
+
 [node name="Treebody2" parent="." unique_id=2001416099 instance=ExtResource("5_7haxy")]
 transform = Transform3D(13.221132, 0, 0, 0, 13.221132, 0, 0, 0, 13.221132, 10.949108, 0.3171308, -42.2959)
 
@@ -4541,13 +4561,55 @@ transform = Transform3D(3.8747077, 0, 0, 0, 3.8747077, 0, 0, 0, 3.8747077, -12.2
 transform = Transform3D(3.7751944, 0, -0.8725056, 0, 3.8747077, 0, 0.8725056, 0, 3.7751944, -12.285291, 0.9107828, 12.13446)
 
 [node name="cargovrrrrm5" parent="." unique_id=1332926636 instance=ExtResource("13_ygrjy")]
-transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -17.478615, 0.9107828, -21.604885)
+transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -17.478615, 0.9107828, -20.253359)
 
 [node name="cargovrrrrm6" parent="." unique_id=1698318804 instance=ExtResource("13_ygrjy")]
-transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -18.899601, 0.9107828, -23.022505)
+transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -18.899601, 0.9107828, -21.670979)
 
 [node name="cargovrrrrm7" parent="." unique_id=692247485 instance=ExtResource("13_ygrjy")]
-transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -18.263863, 0.9107828, -24.841242)
+transform = Transform3D(-3.7654548, 0, -0.9136241, 0, 3.8747077, 0, 0.9136241, 0, -3.7654548, -18.263863, 0.9107828, -23.489716)
 
 [node name="cargovrrrrm8" parent="." unique_id=754069909 instance=ExtResource("13_ygrjy")]
-transform = Transform3D(-3.874477, 0, -0.042255588, 0, 3.8747077, 0, 0.042255588, 0, -3.874477, -18.824755, 0.9107828, -27.152922)
+transform = Transform3D(-3.874477, 0, -0.042255588, 0, 3.8747077, 0, 0.042255588, 0, -3.874477, -18.824755, 0.9107828, -25.801395)
+
+[node name="EnemyTest" parent="." unique_id=851749460 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6359296, 1.3458729, 11.436642)
+
+[node name="EnemyTest2" parent="." unique_id=592348986 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8526654, 1.3458729, 5.0653744)
+
+[node name="EnemyTest3" parent="." unique_id=1843172078 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6715527, 1.4202833, -0.94099903)
+
+[node name="vampire" parent="." unique_id=2139767624 instance=ExtResource("15_4hja8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.351999, 1.715873, 14.926327)
+
+[node name="demon" parent="." unique_id=59935190 instance=ExtResource("16_ic33f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3419485, 1.3458729, -60.172523)
+
+[node name="EnemyTest4" parent="." unique_id=1599969764 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8914802, 1.4202862, -40.414352)
+
+[node name="EnemyTest5" parent="." unique_id=1528888465 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.927651, 1.4202862, -41.702705)
+
+[node name="EnemyTest6" parent="." unique_id=1581750989 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6096377, 1.4202862, -38.612816)
+
+[node name="demon2" parent="." unique_id=823533383 instance=ExtResource("16_ic33f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.464407, 1.3458691, -50.532238)
+
+[node name="vampire2" parent="." unique_id=312125709 instance=ExtResource("15_4hja8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.10759, 1.7158711, -20.935806)
+
+[node name="EnemyTest7" parent="." unique_id=106583898 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.402874, 1.3458767, -4.106972)
+
+[node name="EnemyTest8" parent="." unique_id=2065983437 instance=ExtResource("14_q7b80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.46854, 1.3458767, -8.134022)
+
+[node name="City" parent="." unique_id=1556359213 instance=ExtResource("17_ic33f")]
+transform = Transform3D(-0.34792125, 0, -0.9375238, 0, 1, 0, 0.9375238, 0, -0.34792125, -70.84714, 0, -41.459404)
+
+[node name="Cityscape" parent="." unique_id=589848124 instance=ExtResource("18_em3md")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 103.162, 0, -23.793)
