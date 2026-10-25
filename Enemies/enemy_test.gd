@@ -62,6 +62,8 @@ func _on_timer_timeout() -> void:
 
 
 func rattle():
+	$AnimatedSprite3D.play("new_animation")
+	
 	var cur_player_pos=Globals.player_pos
 	var to_player = Globals.player_pos - global_position
 	for i in 30:
@@ -90,7 +92,7 @@ func rattle():
 	$rattler_timer.start()
 	state = 1
 		
-	
+	$AnimatedSprite3D.play("default")
 
 
 func ouch(damage):
