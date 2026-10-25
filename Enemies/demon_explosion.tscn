@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://l8e7pdbwfff0"]
+
+[ext_resource type="Script" uid="uid://3xqqb3pdwwio" path="res://Enemies/demon_explosion.gd" id="1_j7dm4"]
+[ext_resource type="PackedScene" uid="uid://bn3smiinxihlm" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/smoke_cloud.tscn" id="2_yd2mu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_12gb0"]
+radius = 4.021772
+
+[node name="demon_explosion" type="Area3D" unique_id=1482018116]
+collision_mask = 2
+script = ExtResource("1_j7dm4")
+
+[node name="smoke_cloud" parent="." unique_id=879127273 instance=ExtResource("2_yd2mu")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=699944493]
+shape = SubResource("SphereShape3D_12gb0")
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1650227381]
+collision_mask = 3
+
+[node name="Timer" type="Timer" parent="." unique_id=1184287743]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

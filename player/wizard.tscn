@@ -37,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://dh85gcxk4lfho" path="res://Assets/ball/0015.png" id="33_vm6av"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
+radius = 0.63134766
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_12gb0"]
 
