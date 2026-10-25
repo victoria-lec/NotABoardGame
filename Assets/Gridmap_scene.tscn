@@ -111,7 +111,11 @@ metadata/_gltf_primary_texture_coord = 0
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [sub_resource type="ArrayMesh" id="ArrayMesh_ipaoa"]
+=======
+[sub_resource type="ArrayMesh" id="ArrayMesh_se73v"]
+>>>>>>> Stashed changes
 =======
 [sub_resource type="ArrayMesh" id="ArrayMesh_se73v"]
 >>>>>>> Stashed changes
@@ -149,7 +153,11 @@ _surfaces = [{
 blend_shape_mode = 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 shadow_mesh = SubResource("ArrayMesh_ipaoa")
+=======
+shadow_mesh = SubResource("ArrayMesh_se73v")
+>>>>>>> Stashed changes
 =======
 shadow_mesh = SubResource("ArrayMesh_se73v")
 >>>>>>> Stashed changes
