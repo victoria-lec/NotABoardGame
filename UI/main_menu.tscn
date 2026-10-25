@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bcyyclnvsn3te"]
+
+[ext_resource type="Script" uid="uid://d4k44qxcusc1p" path="res://UI/main_menu.gd" id="1_f40uw"]
+[ext_resource type="Texture2D" uid="uid://cfl4kfqtmlhbh" path="res://UI/spell_safety_menu.png" id="1_p8ccj"]
+[ext_resource type="Texture2D" uid="uid://ch5k3quwgn5kn" path="res://UI/play.png" id="2_d8nwk"]
+[ext_resource type="Texture2D" uid="uid://cjsd2yddnxu88" path="res://UI/quit.png" id="3_4cwpn"]
+[ext_resource type="Texture2D" uid="uid://5wce383xsomb" path="res://UI/play_2.png" id="3_f40uw"]
+
+[node name="main menu" type="Control" unique_id=276982504]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f40uw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1086800643]
+position = Vector2(1606, 613.0001)
+rotation = -3.5953782
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_p8ccj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D2" unique_id=1565567927]
+position = Vector2(2024.0746, 442.0321)
+rotation = -3.5953782
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_p8ccj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D2/Sprite2D2" unique_id=18865987]
+position = Vector2(1725.259, 117.7959)
+rotation = -2.289872
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_p8ccj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=542804786]
+position = Vector2(971, 587.99994)
+rotation = -0.19198622
+texture = ExtResource("1_p8ccj")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=2088033276]
+layout_mode = 0
+offset_left = 986.0
+offset_top = 19.0
+offset_right = 1786.0
+offset_bottom = 819.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.7, 0.7)
+offset_transform_rotation = -0.20071286
+texture_normal = ExtResource("2_d8nwk")
+texture_pressed = ExtResource("3_f40uw")
+texture_hover = ExtResource("3_f40uw")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=576941110]
+layout_mode = 0
+offset_left = 854.0
+offset_top = 335.0
+offset_right = 1654.0
+offset_bottom = 1135.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.2, 0.2)
+offset_transform_rotation = -0.20071286
+texture_normal = ExtResource("3_4cwpn")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

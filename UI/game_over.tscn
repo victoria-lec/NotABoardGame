@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d1gtd3pjovpwo"]
+
+[ext_resource type="Script" uid="uid://b77xwylsibuqb" path="res://UI/game_over.gd" id="1_jawqf"]
+[ext_resource type="Shader" uid="uid://7cskgixtammq" path="res://UI/game_over.gdshader" id="2_3y5qq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_12gb0"]
+shader = ExtResource("2_3y5qq")
+
+[node name="game_over" type="Control" unique_id=891198963]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jawqf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=968533422]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1219647539]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=253768925]
+material = SubResource("ShaderMaterial_12gb0")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
