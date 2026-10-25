@@ -43,6 +43,7 @@ player_weapon=""
 bullet=""
 enemy=""
 interactible=""
+UI=""
 
 [input]
 
