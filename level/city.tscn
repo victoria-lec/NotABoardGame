@@ -88,17 +88,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.15402, 1.7626954, 17.28370
 [node name="EnemyTest2" parent="." unique_id=2038186316 instance=ExtResource("6_kw6vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.933659, 1.7626954, 15.144956)
 
-[node name="EnemyTest3" parent="." unique_id=1484093762 instance=ExtResource("6_kw6vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.670518, 1.7626954, 18.779125)
-
 [node name="EnemyTest5" parent="." unique_id=1434992732 instance=ExtResource("6_kw6vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.69285, 1.7626954, 4.371706)
-
-[node name="demon" parent="." unique_id=59935190 instance=ExtResource("7_c3yu3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3541203, 2.5926952, 12.52792)
-
-[node name="vampire" parent="." unique_id=2139767624 instance=ExtResource("8_p738f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.173807, 1.9026953, 14.307091)
 
 [node name="vampire2" parent="." unique_id=207982111 instance=ExtResource("8_p738f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.179995, 1.9026953, 18.601645)
@@ -120,9 +111,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4723196, 1.7626954, 31.339
 
 [node name="EnemyTest7" parent="." unique_id=1335374127 instance=ExtResource("6_kw6vk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.956939, 1.7626954, 40.051453)
-
-[node name="demon3" parent="." unique_id=1022956083 instance=ExtResource("7_c3yu3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8959606, 2.5926952, 35.082043)
 
 [node name="demon4" parent="." unique_id=723186714 instance=ExtResource("7_c3yu3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.78605, 2.5926952, 71.396576)
@@ -164,6 +152,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.639214, 1.7626954, 109.32
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.706534, 1.7626954, 117.99361)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1283671806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19375134, 0.00016021729, -0.20417309)
 navigation_mesh = SubResource("NavigationMesh_12gb0")
 
 [node name="land" type="Node3D" parent="NavigationRegion3D" unique_id=658824519]

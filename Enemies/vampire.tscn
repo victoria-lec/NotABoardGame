@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ewf0d3k7gv1"]
 
 [ext_resource type="Script" uid="uid://dx6egk6v4vj1o" path="res://Enemies/vampire.gd" id="1_vsttm"]
-[ext_resource type="Texture2D" uid="uid://demagq47lcr4y" path="res://Assets/Enemies/GuyTM.png" id="2_s28vh"]
+[ext_resource type="Texture2D" uid="uid://cujbu1fv0kr7s" path="res://Enemies/PXL_20261024_143138248.png" id="2_s28vh"]
 [ext_resource type="AudioStream" uid="uid://bc4tktdhs8fts" path="res://sound/screams and shit/Oct 25 at 3-37 PM(2).wav" id="3_s28vh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
@@ -42,7 +42,6 @@ autostart = true
 [node name="rattler_timer" type="Timer" parent="." unique_id=1614157043]
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=267718117]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 billboard = 2
 sprite_frames = SubResource("SpriteFrames_12gb0")
 
