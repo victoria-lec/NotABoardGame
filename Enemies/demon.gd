@@ -46,7 +46,7 @@ func _on_timer_timeout() -> void:
 			if $RayCast3D.get_collider() and $RayCast3D.get_collider().is_in_group("player"):
 				ready_to_strike=false
 				state=2
-				$AnimatedSprite3D.play("default")
+				$AnimatedSprite3D.play("attack")
 
 
 			
@@ -75,6 +75,9 @@ func _on_rattler_timer_timeout() -> void:
 
 
 func attack():
+	var coin=randi_range(1,10)
+	if coin==10:
+		$AudioStreamPlayer3D.play()
 	var can = monster.instantiate()
 	get_tree().get_root().add_child(can)
 	can.global_position = global_position
@@ -90,11 +93,8 @@ func attack():
 func _on_animated_sprite_3d_animation_finished() -> void:
 	if state==2:
 		attack()
+		$AnimatedSprite3D.play("neutral")
 		await get_tree().create_timer(2.0).timeout
 		$rattler_timer.start()
 		state=1
-
-
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.is_in_group("player"):
-		body.ouch(30)
+		

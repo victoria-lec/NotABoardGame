@@ -19,4 +19,4 @@ func _process(delta: float) -> void:
 func circle(pos:Vector2):
 	for x in burn_map.x:
 		for y in burn_map.y:
-			set_palette_RGB(Vector2(x,y), png_image.get_pixel(x,y))
+			pass

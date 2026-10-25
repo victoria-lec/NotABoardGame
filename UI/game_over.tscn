@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b77xwylsibuqb" path="res://UI/game_over.gd" id="1_jawqf"]
 [ext_resource type="Shader" uid="uid://7cskgixtammq" path="res://UI/game_over.gdshader" id="2_3y5qq"]
 [ext_resource type="Texture2D" uid="uid://cyqm2hemji22t" path="res://UI/test.png" id="3_wruqd"]
+[ext_resource type="PackedScene" uid="uid://bcyyclnvsn3te" path="res://UI/main_menu.tscn" id="4_phit2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_12gb0"]
 shader = ExtResource("2_3y5qq")
@@ -28,3 +29,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=671320935]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="main menu" parent="." unique_id=276982504 instance=ExtResource("4_phit2")]
+layout_mode = 1

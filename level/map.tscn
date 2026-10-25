@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://j3ihx3qv40g5"]
+
+[ext_resource type="PackedScene" uid="uid://bvnj72xaa40v7" path="res://Assets/block.glb" id="1_dquw1"]
+[ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="2_hwnpr"]
+
+[node name="map" type="Node3D" unique_id=408571910]
+
+[node name="wizard" parent="." unique_id=608797488 instance=ExtResource("2_hwnpr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5383668, 4.1054425, -4.6354094)
+
+[node name="block" parent="." unique_id=937093725 instance=ExtResource("1_dquw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.986768, 0, -1.2290561)

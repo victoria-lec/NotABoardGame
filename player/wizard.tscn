@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bfy8rd542uwj1" path="res://player/wizard.gd" id="1_3dheo"]
 [ext_resource type="Script" uid="uid://cuabm1212tkc1" path="res://player/label.gd" id="2_la7br"]
 [ext_resource type="PackedScene" uid="uid://dphcpicw05mul" path="res://Globals/hopper.tscn" id="3_31ajc"]
-[ext_resource type="Texture2D" uid="uid://cw8uy013tq0vt" path="res://Assets/ball/0045.png" id="3_kh12u"]
+[ext_resource type="Texture2D" uid="uid://bgjevxlkyh4f" path="res://Assets/ball/0045.png" id="3_kh12u"]
 [ext_resource type="Texture2D" uid="uid://bm6kyqiqsmmap" path="res://Assets/ball/0044.png" id="4_8qimv"]
 [ext_resource type="AudioStream" uid="uid://dmkh6lb3crpjs" path="res://Assets/loop.mp3" id="4_g12lj"]
 [ext_resource type="Texture2D" uid="uid://bniaeul7fmbnj" path="res://Assets/ball/0043.png" id="5_ly3fc"]
@@ -167,6 +167,7 @@ offset_bottom = 80.0
 script = ExtResource("2_la7br")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=331294723]
+texture_filter = 1
 position = Vector2(1521, 900)
 sprite_frames = SubResource("SpriteFrames_12gb0")
 frame_progress = 0.6141088
