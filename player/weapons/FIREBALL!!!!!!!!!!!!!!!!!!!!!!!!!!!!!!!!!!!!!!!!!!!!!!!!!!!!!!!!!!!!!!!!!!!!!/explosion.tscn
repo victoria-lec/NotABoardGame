@@ -52,3 +52,4 @@ shape = SubResource("SphereShape3D_1qp3r")
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="grow_time" to="." method="_on_grow_time_timeout"]
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

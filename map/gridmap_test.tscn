@@ -2,6 +2,7 @@
 
 [ext_resource type="MeshLibrary" uid="uid://bljn72wd68ner" path="res://Chartest2.meshlib" id="1_cpfj1"]
 [ext_resource type="PackedScene" uid="uid://borww8ahv0gj1" path="res://player/wizard.tscn" id="2_cpfj1"]
+[ext_resource type="PackedScene" uid="uid://7qxu0vkvmckw" path="res://Assets/Tiles/tiles.tscn" id="3_b33hf"]
 [ext_resource type="PackedScene" uid="uid://c3qk8yf1dw35u" path="res://Enemies/Enemy test.tscn" id="3_cpfj1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cpfj1"]
@@ -53,6 +54,9 @@ mesh = SubResource("BoxMesh_46wvr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6053772, 0.5, 2.5474854)
 shape = SubResource("BoxShape3D_cpfj1")
 
+[node name="Tiles" parent="StaticBody3D" unique_id=716315115 instance=ExtResource("3_b33hf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6851243, 5, -2.171445)
+
 [node name="EnemyTest" parent="." unique_id=1885884954 instance=ExtResource("3_cpfj1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.756426, 1.8481445, -41.52832)
 
@@ -76,3 +80,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.518288, 1.199585, 38.94531
 
 [node name="EnemyTest8" parent="." unique_id=960753059 instance=ExtResource("3_cpfj1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.630173, 1.199585, 33.498234)
+
+[node name="Tiles" parent="." unique_id=925135920 instance=ExtResource("3_b33hf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2278872, 5, -5.8447933)
