@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://ewf0d3k7gv1"]
+
+[ext_resource type="Texture2D" uid="uid://cqh3symvyo08l" path="res://icon.svg" id="1_3j2av"]
+[ext_resource type="Script" uid="uid://dx6egk6v4vj1o" path="res://Enemies/vampire.gd" id="1_vsttm"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_12gb0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3j2av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_3j2av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_3j2av")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_12gb0"]
+size = Vector3(1.4296265, 1.2045898, 1.234375)
+
+[node name="vampire" type="CharacterBody3D" unique_id=2139767624 groups=["enemy"]]
+collision_layer = 3
+script = ExtResource("1_vsttm")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1844874042]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1618693236]
+shape = SubResource("CapsuleShape3D_12gb0")
+
+[node name="Timer" type="Timer" parent="." unique_id=1525882065]
+wait_time = 0.1
+autostart = true
+
+[node name="rattler_timer" type="Timer" parent="." unique_id=1614157043]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=267718117]
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_12gb0")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2035695997]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=1961325573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0215296, 0.11876428, -1.2683339)
+shape = SubResource("BoxShape3D_12gb0")
+disabled = true
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1694001807]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="rattler_timer" to="." method="_on_rattler_timer_timeout"]
+[connection signal="animation_finished" from="AnimatedSprite3D" to="." method="_on_animated_sprite_3d_animation_finished"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -1,26 +1,145 @@
 [gd_scene format=3 uid="uid://di4026cyss73v"]
 
 [ext_resource type="Script" uid="uid://dg6obcuijm1kj" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/fireball.gd" id="1_urka4"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3ype"]
-emission_enabled = true
-emission = Color(1, 0.45882353, 0, 1)
-emission_energy_multiplier = 12.05
-
-[sub_resource type="SphereMesh" id="SphereMesh_12gb0"]
-material = SubResource("StandardMaterial3D_r3ype")
-radius = 0.2
-height = 0.4
+[ext_resource type="Texture2D" uid="uid://cw8uy013tq0vt" path="res://Assets/ball/0045.png" id="2_rs3y8"]
+[ext_resource type="Texture2D" uid="uid://bm6kyqiqsmmap" path="res://Assets/ball/0044.png" id="3_i7pn8"]
+[ext_resource type="Texture2D" uid="uid://bniaeul7fmbnj" path="res://Assets/ball/0043.png" id="4_wqiy5"]
+[ext_resource type="Texture2D" uid="uid://dmw6wthshtlkh" path="res://Assets/ball/0042.png" id="5_k56kr"]
+[ext_resource type="Texture2D" uid="uid://c3io2emul1rm" path="res://Assets/ball/0041.png" id="6_mah1f"]
+[ext_resource type="Texture2D" uid="uid://rfbnafo7kwv3" path="res://Assets/ball/0040.png" id="7_1cowd"]
+[ext_resource type="Texture2D" uid="uid://bfpja0pafckf7" path="res://Assets/ball/0039.png" id="8_2qtvd"]
+[ext_resource type="Texture2D" uid="uid://cs5loahxc1dyr" path="res://Assets/ball/0038.png" id="9_h3cak"]
+[ext_resource type="Texture2D" uid="uid://1mffohxediac" path="res://Assets/ball/0037.png" id="10_44elg"]
+[ext_resource type="Texture2D" uid="uid://ce8asmsv5q1gx" path="res://Assets/ball/0036.png" id="11_56d7w"]
+[ext_resource type="Texture2D" uid="uid://bd1guim1dr5on" path="res://Assets/ball/0035.png" id="12_sxh61"]
+[ext_resource type="Texture2D" uid="uid://modmqnle0ykj" path="res://Assets/ball/0034.png" id="13_kufb5"]
+[ext_resource type="Texture2D" uid="uid://bdjp6o7s15fng" path="res://Assets/ball/0033.png" id="14_1c0cr"]
+[ext_resource type="Texture2D" uid="uid://cmnowau7jbxly" path="res://Assets/ball/0032.png" id="15_asays"]
+[ext_resource type="Texture2D" uid="uid://bqcpurgsc1ltf" path="res://Assets/ball/0031.png" id="16_546vl"]
+[ext_resource type="Texture2D" uid="uid://dn57myfdca5mn" path="res://Assets/ball/0030.png" id="17_7ghu0"]
+[ext_resource type="Texture2D" uid="uid://cq4pytaw4vqrk" path="res://Assets/ball/0029.png" id="18_8wfxu"]
+[ext_resource type="Texture2D" uid="uid://bbvjtuuq00dv0" path="res://Assets/ball/0028.png" id="19_qvr6o"]
+[ext_resource type="Texture2D" uid="uid://dto4snsqr87cs" path="res://Assets/ball/0027.png" id="20_asadg"]
+[ext_resource type="Texture2D" uid="uid://cghoi528m30cr" path="res://Assets/ball/0026.png" id="21_w5532"]
+[ext_resource type="Texture2D" uid="uid://onoj6e5yomvc" path="res://Assets/ball/0025.png" id="22_c4x1u"]
+[ext_resource type="Texture2D" uid="uid://bulmwe8455r68" path="res://Assets/ball/0024.png" id="23_887q5"]
+[ext_resource type="Texture2D" uid="uid://00yf4drwic3c" path="res://Assets/ball/0023.png" id="24_2t76b"]
+[ext_resource type="Texture2D" uid="uid://blebcr5crsw3t" path="res://Assets/ball/0022.png" id="25_87ulb"]
+[ext_resource type="Texture2D" uid="uid://xqekxb3svebl" path="res://Assets/ball/0021.png" id="26_k8v5b"]
+[ext_resource type="Texture2D" uid="uid://iolhqwggm06b" path="res://Assets/ball/0020.png" id="27_mixqd"]
+[ext_resource type="Texture2D" uid="uid://b4kgk512oq8f8" path="res://Assets/ball/0019.png" id="28_pnvjy"]
+[ext_resource type="Texture2D" uid="uid://dnpw6qnbhod3d" path="res://Assets/ball/0018.png" id="29_xoqsa"]
+[ext_resource type="Texture2D" uid="uid://cw3li78a4wk8d" path="res://Assets/ball/0017.png" id="30_q2l4m"]
+[ext_resource type="Texture2D" uid="uid://cuaq5mutg3i8l" path="res://Assets/ball/0016.png" id="31_1kk7a"]
+[ext_resource type="Texture2D" uid="uid://dh85gcxk4lfho" path="res://Assets/ball/0015.png" id="32_enuns"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_7ocpx"]
 radius = 0.2
 
-[node name="fireball" type="RigidBody3D" unique_id=1428884094 groups=["player_weapon"]]
-gravity_scale = 0.15
-script = ExtResource("1_urka4")
+[sub_resource type="SpriteFrames" id="SpriteFrames_12gb0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rs3y8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i7pn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wqiy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k56kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mah1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1cowd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2qtvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_h3cak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_44elg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_56d7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sxh61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kufb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1c0cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_asays")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_546vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7ghu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8wfxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qvr6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_asadg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_w5532")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_c4x1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_887q5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2t76b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_87ulb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_k8v5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mixqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pnvjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xoqsa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q2l4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_1kk7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_enuns")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=287950686]
-mesh = SubResource("SphereMesh_12gb0")
+[node name="fireball" type="RigidBody3D" unique_id=1428884094 groups=["player_weapon"]]
+gravity_scale = 0.3
+script = ExtResource("1_urka4")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=2023619249]
 
@@ -30,5 +149,10 @@ shape = SubResource("SphereShape3D_7ocpx")
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2024781171]
 light_color = Color(1, 0, 0, 1)
 light_energy = 4.78
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=518356587]
+visible = false
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_12gb0")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dktslqvssn7vd" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/explosion_maker.gd" id="1_fxfyw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_12gb0"]
-radius = 0.2
+radius = 3.0
 
 [node name="exploision_trail_generator" type="Node3D" unique_id=1693415431]
 
@@ -12,6 +12,7 @@ collision_layer = 0
 script = ExtResource("1_fxfyw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker" unique_id=48269798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker" unique_id=1342128279]
@@ -24,6 +25,7 @@ script = ExtResource("1_fxfyw")
 dir = 45
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker2" unique_id=1453288810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker2" unique_id=2122917974]
@@ -36,6 +38,7 @@ script = ExtResource("1_fxfyw")
 dir = 90
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker3" unique_id=1280932860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker3" unique_id=1829295448]
@@ -48,6 +51,7 @@ script = ExtResource("1_fxfyw")
 dir = 135
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker4" unique_id=609912985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker4" unique_id=1659872867]
@@ -60,6 +64,7 @@ script = ExtResource("1_fxfyw")
 dir = 180
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker5" unique_id=10006231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker5" unique_id=1485271014]
@@ -72,6 +77,7 @@ script = ExtResource("1_fxfyw")
 dir = 225
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker6" unique_id=551346452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker6" unique_id=928561956]
@@ -84,6 +90,7 @@ script = ExtResource("1_fxfyw")
 dir = 260
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker7" unique_id=697689143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker7" unique_id=326265938]
@@ -96,6 +103,7 @@ script = ExtResource("1_fxfyw")
 dir = 315
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="explosion_maker8" unique_id=546266307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("SphereShape3D_12gb0")
 
 [node name="Timer" type="Timer" parent="explosion_maker8" unique_id=813146708]
