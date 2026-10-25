@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bd25b2u884mih"]
+
+[ext_resource type="Script" uid="uid://gnmlpohkfgwt" path="res://tree_main.gd" id="1_tstou"]
+[ext_resource type="PackedScene" uid="uid://60ywlqsd5q3t" path="res://tree_2.tscn" id="2_tstou"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jghuu"]
+height = 1.0048828
+radius = 0.08642578
+
+[node name="Treebody" type="StaticBody3D" unique_id=855919960]
+script = ExtResource("1_tstou")
+
+[node name="tree2" parent="." unique_id=1753092674 instance=ExtResource("2_tstou")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=442771804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4975586, 0)
+shape = SubResource("CylinderShape3D_jghuu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1819635795]
+wait_time = 3.3
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
