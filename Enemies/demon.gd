@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var monster=preload("res://Enemies/monster_enegy.tscn")
 var ready_to_strike=false
 var state=0
-var health = 210
+var health = 120
 var charge_dir=Vector3()
 #0:idle
 #1:walking

@@ -4,7 +4,7 @@ var speed=10
 var base_speed=10
 var max_speed=40
 
-var health = 100
+var health = 500
 
 var damage=0
 var Jumpforce=10

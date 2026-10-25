@@ -5,7 +5,7 @@ extends CharacterBody3D
 
 var ready_to_strike=false
 var state=0
-var health = 150
+var health = 90
 var charge_dir=Vector3()
 #0:idle
 #1:walking

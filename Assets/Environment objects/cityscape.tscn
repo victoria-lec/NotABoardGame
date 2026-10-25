@@ -180,9 +180,6 @@ shadow_mesh = SubResource("ArrayMesh_u2xh7")
 
 [node name="Cityscape" type="Node3D" unique_id=589848124]
 
-[node name="Building 3" parent="." unique_id=458758323 instance=ExtResource("1_iixvw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
-
 [node name="Building 2" parent="." unique_id=272322712 instance=ExtResource("2_g4jdq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.5)
 
@@ -342,15 +339,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 3, -3.5)
 
 [node name="Building 18" parent="." unique_id=1272419563 instance=ExtResource("3_q5ton")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5, 4.5, -3.5)
-
-[node name="Building 19" parent="." unique_id=263913760 instance=ExtResource("1_iixvw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -0.5)
-
-[node name="Building 20" parent="." unique_id=1026822473 instance=ExtResource("1_iixvw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -0.5)
-
-[node name="Building 21" parent="." unique_id=1888209884 instance=ExtResource("1_iixvw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, -0.5)
 
 [node name="Building 22" parent="." unique_id=1332567393 instance=ExtResource("1_iixvw")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6, 1.5, 3.5)

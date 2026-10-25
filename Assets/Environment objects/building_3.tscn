@@ -677,842 +677,842 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_rnhql")
 
-[node name="Building 3" type="Node3D" unique_id=458758323]
+[node name="Building 3" type="Node3D" unique_id=458758323 groups=["land"]]
 
-[node name="corner" type="Node3D" parent="." unique_id=135072088]
+[node name="corner" type="Node3D" parent="." unique_id=135072088 groups=["land"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 
-[node name="building_corner" type="MeshInstance3D" parent="corner" unique_id=1489993998]
+[node name="building_corner" type="MeshInstance3D" parent="corner" unique_id=1489993998 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0, 0, 0)
 mesh = SubResource("ArrayMesh_diu0a")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="corner/building_corner" unique_id=685143396]
+[node name="StaticBody3D" type="StaticBody3D" parent="corner/building_corner" unique_id=685143396 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=503311235]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=503311235 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_05x2c")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1619328331]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1619328331 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5ntkf")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1152707637]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1152707637 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dv2j2")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1631321611]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1631321611 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_f3bd3")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=107048525]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=107048525 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_4ssvm")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1083304804]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1083304804 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_7xpr6")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1332334532]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1332334532 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h4n67")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=825921170]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=825921170 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_doqna")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=167857427]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=167857427 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hwiyh")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=303651644]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=303651644 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hfu6r")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1129086026]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1129086026 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_nun2j")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=557064558]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=557064558 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_oy1eq")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1589838945]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1589838945 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_46hid")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=120038903]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=120038903 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0ds5y")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1703099149]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1703099149 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ktg82")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=231379805]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=231379805 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_23jgp")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1153078268]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1153078268 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_014lm")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1995530098]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1995530098 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ncb5v")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=22519958]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=22519958 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rsv3u")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=556566457]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=556566457 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_q5jgs")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1577624006]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1577624006 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_gtabg")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=810290811]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=810290811 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_k3g04")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1283956075]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1283956075 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ayeqi")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1297946857]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=1297946857 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_48lx6")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=331912394]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=331912394 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_fhp8n")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=911669827]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=911669827 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pdik6")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=412048742]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=412048742 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_l7l20")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2109058995]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2109058995 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_2ombd")
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=46232047]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=46232047 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_cowwl")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2119650702]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2119650702 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_075e0")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2019422215]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=2019422215 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mtrmt")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=175691478]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner/building_corner/StaticBody3D" unique_id=175691478 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jehjg")
 
-[node name="building2_lores" type="Node3D" parent="." unique_id=1833427062]
+[node name="building2_lores" type="Node3D" parent="." unique_id=1833427062 groups=["land"]]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 0, 0)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores" unique_id=1327692041]
+[node name="Building" type="MeshInstance3D" parent="building2_lores" unique_id=1327692041 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_smd7f")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores/Building" unique_id=1370173821]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores/Building" unique_id=1370173821 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1160687147]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1160687147 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rmrom")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2111603281]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2111603281 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hfebc")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=524154377]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=524154377 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_kjpk5")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2138534413]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2138534413 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_beasp")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1514178529]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1514178529 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_6jwyj")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=47876460]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=47876460 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_82t2f")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=414901693]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=414901693 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_05j22")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1085709689]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1085709689 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pjqmg")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1714481362]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1714481362 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_v772o")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=702725773]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=702725773 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3h61b")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=112030788]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=112030788 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h2law")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1288265305]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1288265305 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5inla")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=675299572]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=675299572 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_qnqh7")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=277236686]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=277236686 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5qo7m")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1865251741]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1865251741 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_g5pwc")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=870127186]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=870127186 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_64tms")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1458999137]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=1458999137 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hrqfu")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2007036210]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores/Building/StaticBody3D" unique_id=2007036210 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mofuw")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores" unique_id=834716967]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores" unique_id=834716967 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_0lwf4")
 skeleton = NodePath("")
 
-[node name="corner2" type="Node3D" parent="." unique_id=1881340381]
+[node name="corner2" type="Node3D" parent="." unique_id=1881340381 groups=["land"]]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3, 0, 0)
 
-[node name="building_corner" type="MeshInstance3D" parent="corner2" unique_id=1469393391]
+[node name="building_corner" type="MeshInstance3D" parent="corner2" unique_id=1469393391 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0, 0, 0)
 mesh = SubResource("ArrayMesh_diu0a")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="corner2/building_corner" unique_id=1664532921]
+[node name="StaticBody3D" type="StaticBody3D" parent="corner2/building_corner" unique_id=1664532921 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1770798001]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1770798001 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_05x2c")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1505718798]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1505718798 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5ntkf")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=952116105]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=952116105 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dv2j2")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2090272123]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2090272123 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_f3bd3")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=954439138]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=954439138 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_4ssvm")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=756943311]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=756943311 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_7xpr6")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1985286974]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1985286974 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h4n67")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1831295922]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1831295922 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_doqna")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=611672844]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=611672844 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hwiyh")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2008634960]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2008634960 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hfu6r")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1065255657]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1065255657 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_nun2j")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1221702]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1221702 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_oy1eq")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1998646119]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1998646119 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_46hid")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=390060926]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=390060926 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0ds5y")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=465628782]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=465628782 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ktg82")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1295609952]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1295609952 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_23jgp")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2145379049]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=2145379049 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_014lm")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1709100210]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1709100210 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ncb5v")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1669716294]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1669716294 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rsv3u")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1115657076]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1115657076 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_q5jgs")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1540828851]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1540828851 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_gtabg")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1758877850]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1758877850 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_k3g04")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1297837259]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1297837259 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ayeqi")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=526522598]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=526522598 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_48lx6")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=846025086]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=846025086 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_fhp8n")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=902871334]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=902871334 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pdik6")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=20291715]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=20291715 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_l7l20")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=143474692]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=143474692 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_2ombd")
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=967221140]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=967221140 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_cowwl")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=306810321]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=306810321 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_075e0")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1088628907]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=1088628907 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mtrmt")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=427083902]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner2/building_corner/StaticBody3D" unique_id=427083902 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jehjg")
 
-[node name="building2_lores2" type="Node3D" parent="." unique_id=92464864]
+[node name="building2_lores2" type="Node3D" parent="." unique_id=92464864 groups=["land"]]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3, 0, -2)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores2" unique_id=64505117]
+[node name="Building" type="MeshInstance3D" parent="building2_lores2" unique_id=64505117 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_smd7f")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores2/Building" unique_id=1121248139]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores2/Building" unique_id=1121248139 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=839816387]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=839816387 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rmrom")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1959068782]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1959068782 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hfebc")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1697128818]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1697128818 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_kjpk5")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=363033509]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=363033509 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_beasp")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=441439651]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=441439651 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_6jwyj")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=2036879001]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=2036879001 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_82t2f")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=2103014995]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=2103014995 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_05j22")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1881075659]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1881075659 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pjqmg")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=769807956]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=769807956 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_v772o")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=6673825]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=6673825 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3h61b")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1272331310]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1272331310 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h2law")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=644647536]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=644647536 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5inla")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=910100933]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=910100933 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_qnqh7")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=101748221]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=101748221 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_5qo7m")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1257473748]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1257473748 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_g5pwc")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1595544073]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=1595544073 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_64tms")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=352920208]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=352920208 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_hrqfu")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=569894147]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores2/Building/StaticBody3D" unique_id=569894147 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mofuw")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores2" unique_id=2070762268]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores2" unique_id=2070762268 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_0lwf4")
 skeleton = NodePath("")
 
-[node name="building2_lores3" type="Node3D" parent="." unique_id=493554775]
+[node name="building2_lores3" type="Node3D" parent="." unique_id=493554775 groups=["land"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores3" unique_id=1072863546]
+[node name="Building" type="MeshInstance3D" parent="building2_lores3" unique_id=1072863546 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_jg73r")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores3/Building" unique_id=1554399430]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores3/Building" unique_id=1554399430 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=755528562]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=755528562 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0fqal")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=801985470]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=801985470 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sk0aa")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=231764819]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=231764819 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3ej6p")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1983889597]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1983889597 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ejnd5")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1834776859]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1834776859 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_i08sl")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1881224130]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1881224130 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dj385")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=490100740]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=490100740 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_apqqn")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=465041840]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=465041840 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_u3uwg")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1831145066]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1831145066 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dh1te")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=674912624]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=674912624 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_blbcf")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1380677606]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1380677606 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sao1b")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1696374076]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1696374076 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_boloi")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=934669280]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=934669280 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_bcubr")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=895802101]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=895802101 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h8r8u")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1665283719]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1665283719 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n4wmk")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=2086475709]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=2086475709 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jekjm")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=252663213]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=252663213 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_lryly")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1081419935]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores3/Building/StaticBody3D" unique_id=1081419935 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n6whf")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores3" unique_id=2003498770]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores3" unique_id=2003498770 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_f27wl")
 skeleton = NodePath("")
 
-[node name="building2_lores4" type="Node3D" parent="." unique_id=176981956]
+[node name="building2_lores4" type="Node3D" parent="." unique_id=176981956 groups=["land"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores4" unique_id=603028773]
+[node name="Building" type="MeshInstance3D" parent="building2_lores4" unique_id=603028773 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_jg73r")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores4/Building" unique_id=283772334]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores4/Building" unique_id=283772334 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1038881641]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1038881641 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0fqal")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2064796755]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2064796755 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sk0aa")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=332434797]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=332434797 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3ej6p")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=970209391]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=970209391 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ejnd5")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1776160974]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1776160974 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_i08sl")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2087528404]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2087528404 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dj385")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1830755541]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1830755541 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_apqqn")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=701082416]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=701082416 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_u3uwg")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=483773014]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=483773014 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dh1te")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1306622839]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1306622839 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_blbcf")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1269723351]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=1269723351 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sao1b")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=723192064]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=723192064 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_boloi")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=667928665]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=667928665 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_bcubr")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=202788877]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=202788877 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h8r8u")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2109040431]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2109040431 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n4wmk")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=528155068]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=528155068 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jekjm")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2081822543]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=2081822543 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_lryly")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=831577733]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores4/Building/StaticBody3D" unique_id=831577733 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n6whf")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores4" unique_id=1845876921]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores4" unique_id=1845876921 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_f27wl")
 skeleton = NodePath("")
 
-[node name="building2_lores5" type="Node3D" parent="." unique_id=2049735332]
+[node name="building2_lores5" type="Node3D" parent="." unique_id=2049735332 groups=["land"]]
 transform = Transform3D(-1, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, -1, -3, 0, -4)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores5" unique_id=1472476476]
+[node name="Building" type="MeshInstance3D" parent="building2_lores5" unique_id=1472476476 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_jg73r")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores5/Building" unique_id=1468362825]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores5/Building" unique_id=1468362825 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1450628963]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1450628963 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0fqal")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1987294078]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1987294078 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sk0aa")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1404752240]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1404752240 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3ej6p")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=466768056]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=466768056 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ejnd5")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=917542310]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=917542310 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_i08sl")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1174536777]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1174536777 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dj385")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1672851143]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1672851143 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_apqqn")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1772715388]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1772715388 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_u3uwg")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1300509905]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1300509905 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dh1te")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1759112921]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1759112921 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_blbcf")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1365930300]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1365930300 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sao1b")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1743666490]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1743666490 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_boloi")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1342371780]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1342371780 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_bcubr")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1838753111]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1838753111 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_h8r8u")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1085721399]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1085721399 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n4wmk")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=83394788]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=83394788 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jekjm")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1683200870]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=1683200870 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_lryly")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=103499218]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores5/Building/StaticBody3D" unique_id=103499218 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_n6whf")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores5" unique_id=511109347]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores5" unique_id=511109347 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_f27wl")
 skeleton = NodePath("")
 
-[node name="corner3" type="Node3D" parent="." unique_id=957880414]
+[node name="corner3" type="Node3D" parent="." unique_id=957880414 groups=["land"]]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3, 0, -6)
 
-[node name="building_corner" type="MeshInstance3D" parent="corner3" unique_id=385756397]
+[node name="building_corner" type="MeshInstance3D" parent="corner3" unique_id=385756397 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0, 0, 0)
 mesh = SubResource("ArrayMesh_wwh8n")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="corner3/building_corner" unique_id=383030453]
+[node name="StaticBody3D" type="StaticBody3D" parent="corner3/building_corner" unique_id=383030453 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1718714354]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1718714354 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_boeys")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=483959892]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=483959892 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_d75nr")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1847954736]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1847954736 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_41frj")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=525947158]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=525947158 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ofutg")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=387222054]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=387222054 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sgw5q")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2026482614]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2026482614 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_lgs46")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2135866603]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2135866603 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8a07h")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=202875007]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=202875007 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_14sn7")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1277845282]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1277845282 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_wpil7")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=133683536]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=133683536 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8krq2")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1858866411]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1858866411 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ll48j")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1453218548]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1453218548 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_kqjwn")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1540837598]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1540837598 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_41anb")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=386580472]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=386580472 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vtq43")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=299125111]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=299125111 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_4row3")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=275700410]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=275700410 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_uwtde")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2021704181]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2021704181 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pb0vg")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=936729070]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=936729070 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8eb72")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=469757678]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=469757678 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jwhps")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=577290487]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=577290487 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sn843")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=28224476]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=28224476 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_j6smp")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=900313140]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=900313140 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ke6k3")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2108658149]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=2108658149 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_wwbfl")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1534497318]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1534497318 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vurje")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1543821440]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1543821440 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vtl5n")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=815755844]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=815755844 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_m7ypm")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=395257711]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=395257711 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mav3h")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=839439324]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=839439324 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rvwlm")
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=526964615]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=526964615 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_bxk0l")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1994440024]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1994440024 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ckbgc")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1070021722]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=1070021722 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_o7sto")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=224041814]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner3/building_corner/StaticBody3D" unique_id=224041814 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ec5pt")
 
-[node name="corner4" type="Node3D" parent="." unique_id=1020557463]
+[node name="corner4" type="Node3D" parent="." unique_id=1020557463 groups=["land"]]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1, 0, -6)
 
-[node name="building_corner" type="MeshInstance3D" parent="corner4" unique_id=5704602]
+[node name="building_corner" type="MeshInstance3D" parent="corner4" unique_id=5704602 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0, 0, 0)
 mesh = SubResource("ArrayMesh_wwh8n")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="corner4/building_corner" unique_id=52024044]
+[node name="StaticBody3D" type="StaticBody3D" parent="corner4/building_corner" unique_id=52024044 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=99949518]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=99949518 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_boeys")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=69933169]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=69933169 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_d75nr")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1233367503]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1233367503 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_41frj")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1157981198]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1157981198 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ofutg")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1853171438]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1853171438 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sgw5q")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=40264657]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=40264657 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_lgs46")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=56834108]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=56834108 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8a07h")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1909939706]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1909939706 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_14sn7")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=31423112]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=31423112 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_wpil7")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1304104035]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1304104035 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8krq2")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=457586139]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=457586139 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ll48j")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1772557100]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1772557100 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_kqjwn")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1330092891]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1330092891 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_41anb")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=962267621]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=962267621 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vtq43")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1896914407]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1896914407 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_4row3")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2009967200]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2009967200 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_uwtde")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1892657496]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1892657496 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_pb0vg")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=914340041]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=914340041 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8eb72")
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2027083527]
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2027083527 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_jwhps")
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2050925122]
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2050925122 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_sn843")
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=241369962]
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=241369962 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_j6smp")
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=646775553]
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=646775553 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ke6k3")
 
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=589398488]
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=589398488 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_wwbfl")
 
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=787815718]
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=787815718 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vurje")
 
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=570497459]
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=570497459 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_vtl5n")
 
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=739930707]
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=739930707 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_m7ypm")
 
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2146890312]
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=2146890312 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_mav3h")
 
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=640765028]
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=640765028 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_rvwlm")
 
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1336341268]
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1336341268 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_bxk0l")
 
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1639634392]
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1639634392 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ckbgc")
 
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=629397264]
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=629397264 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_o7sto")
 
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1208097836]
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="corner4/building_corner/StaticBody3D" unique_id=1208097836 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_ec5pt")
 
-[node name="building2_lores6" type="Node3D" parent="." unique_id=1811795588]
+[node name="building2_lores6" type="Node3D" parent="." unique_id=1811795588 groups=["land"]]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1, 0, -6)
 
-[node name="Building" type="MeshInstance3D" parent="building2_lores6" unique_id=932462179]
+[node name="Building" type="MeshInstance3D" parent="building2_lores6" unique_id=932462179 groups=["land"]]
 transform = Transform3D(0.27750024, 0, 0, 0, 0.27750024, 0, 0, 0, 0.27655077, 0.48010874, 0, 0.41047946)
 mesh = SubResource("ArrayMesh_1yjly")
 skeleton = NodePath("")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores6/Building" unique_id=392343433]
+[node name="StaticBody3D" type="StaticBody3D" parent="building2_lores6/Building" unique_id=392343433 groups=["land"]]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1703514837]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1703514837 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_i8uq5")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1423063365]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1423063365 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_11qr1")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1123269325]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1123269325 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_03clt")
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1368390872]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1368390872 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_yx1r4")
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2003848159]
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2003848159 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_8ceu5")
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=714222413]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=714222413 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_il1k8")
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=372336026]
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=372336026 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_br1q8")
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2059044628]
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2059044628 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_3g1tv")
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=515490867]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=515490867 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_capmt")
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=937701975]
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=937701975 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_348yq")
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1172948324]
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1172948324 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_kibdl")
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=51607521]
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=51607521 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_0ft34")
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1115541799]
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1115541799 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_2l07b")
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1882767167]
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1882767167 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_dio85")
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=618672474]
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=618672474 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_wse6e")
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2082840694]
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=2082840694 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_g1ag6")
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1127342864]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=1127342864 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_my571")
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=682512931]
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="building2_lores6/Building/StaticBody3D" unique_id=682512931 groups=["land"]]
 shape = SubResource("ConvexPolygonShape3D_qqg2b")
 
-[node name="Cube_001" type="MeshInstance3D" parent="building2_lores6" unique_id=1452543216]
+[node name="Cube_001" type="MeshInstance3D" parent="building2_lores6" unique_id=1452543216 groups=["land"]]
 visible = false
 mesh = SubResource("ArrayMesh_qqeta")
 skeleton = NodePath("")

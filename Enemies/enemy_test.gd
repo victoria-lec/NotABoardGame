@@ -5,7 +5,7 @@ extends CharacterBody3D
 @onready var bullet=preload("res://Enemies/skelleton_bullet.tscn")
 var ready_to_rattle=false
 var state=0
-var health = 60
+var health = 30
 
 #0:idle
 #1:walking

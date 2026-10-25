@@ -33,7 +33,6 @@ script = ExtResource("1_nabwb")
 shape = SubResource("CapsuleShape3D_0oy0n")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=1609583801]
-debug_enabled = true
 
 [node name="Timer" type="Timer" parent="." unique_id=580667065]
 wait_time = 0.2
