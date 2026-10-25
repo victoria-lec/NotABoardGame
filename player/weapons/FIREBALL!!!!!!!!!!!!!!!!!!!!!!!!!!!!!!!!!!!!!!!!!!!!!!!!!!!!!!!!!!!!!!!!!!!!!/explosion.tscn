@@ -3,9 +3,12 @@
 [ext_resource type="Script" uid="uid://cbtocu270f1e4" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/explosion.gd" id="1_os4yd"]
 [ext_resource type="PackedScene" uid="uid://mhhofyeeyh5w" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/exploision_trail_generator.tscn" id="2_ilvpf"]
 [ext_resource type="PackedScene" uid="uid://bn3smiinxihlm" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/smoke_cloud.tscn" id="3_7wadv"]
+[ext_resource type="Script" uid="uid://bha0vc8hlnt60" path="res://player/weapons/FIREBALL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/area_3d.gd" id="4_mlbjr"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_42plh"]
 radius = 30.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1qp3r"]
 
 [node name="explosion" type="Area3D" unique_id=452503344]
 collision_mask = 2
@@ -38,6 +41,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2162867, 0)
 
 [node name="smoke_cloud" parent="." unique_id=879127273 instance=ExtResource("3_7wadv")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=556319387]
+script = ExtResource("4_mlbjr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=368742541]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+shape = SubResource("SphereShape3D_1qp3r")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
