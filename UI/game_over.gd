@@ -1,11 +1,13 @@
 extends Control
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Sprite2D.texture=Globals.scene_texture
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	for i in get_tree().get_root().get_children():
+		
+		if i.is_in_group("UI") or i.name=="Globals":
+			pass
+		else:
+			i.queue_free()
+			
+	if Globals.scene_texture:
+		$Sprite2D.texture=Globals.scene_texture
